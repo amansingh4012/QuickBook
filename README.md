@@ -1,260 +1,178 @@
-# QuickBook - Fast Cinema Booking System
+# QuickBook - Cinema Booking System 🎬
 
-A modern, full-stack cinema booking application built with React, Node.js, and MySQL. This system allows users to browse movies, select seats, make bookings with real-time availability, and provides administrators with comprehensive management tools.
+> **⚠️ PROJECT UNDER DEVELOPMENT** - This is an ongoing project and features are being actively developed.
 
-## Live Demo
+## 📖 About This Project
 
-**Application**: [https://scaler-assignment-five.vercel.app/](https://scaler-assignment-five.vercel.app/)
+QuickBook is a modern cinema ticket booking application being built with React, Node.js, and MySQL. The goal is to create a full-stack platform where users can browse movies, select seats in real-time, and make bookings - all while cinema administrators can manage their operations efficiently.
 
-> **⚠️ Note**: The backend is deployed on Render's free tier, which may experience cold starts. If the application seems slow initially, please wait 30-60 seconds for the backend services to spin up.
+This project is a learning journey in building production-quality web applications with modern technologies and best practices.
 
-## Demo Credentials (For Testing)
+## 🎯 What I'm Building
 
-**Admin Access:**
-- Email: `admin@gmail.com`
-- Password: `123456`
-- Navigate to `/admin` after login
+A cinema booking system that includes:
 
-**Regular User:**
-- Email: `test@gmail.com`
-- Password: `123456`
+- **For Moviegoers:**
+  - Browse available movies
+  - View cinema locations and showtimes
+  - Select seats with a visual seat map
+  - Book tickets securely
+  - View booking history
 
+- **For Cinema Administrators:**
+  - Manage movies, cinemas, and screens
+  - Schedule shows across different locations
+  - Monitor bookings and seat occupancy
+  - Track revenue and analytics
 
-### API Documentation
-![API Documentation](./docs/screenshots/api-docs.png)
-*Complete API documentation with interactive examples*
-
-**The full API documentation is available at `/api-docs` after starting the server:**
-
-[View API Docs Live](https://scaler-assignment-5yzo.onrender.com/api-docs/)
-
-> **Note:** Make sure your server is running locally at `http://localhost:3000`. 
+- **Technical Features:**
+  - Real-time seat availability updates using Socket.io
+  - Temporary seat blocking to prevent double bookings
+  - JWT-based authentication and authorization
+  - RESTful API with comprehensive documentation
+  - Responsive design for all devices
 
 ## 🛠️ Tech Stack
 
-### Frontend
-- **React**
-- **Vite**
-- **Tailwind CSS** 
-- **React Router DOM** 
-- **Zustand** 
+**Frontend:**
+- React 19 with Vite
+- TailwindCSS for styling
+- Zustand for state management
+- React Router for navigation
+- Socket.io Client for real-time updates
 
+**Backend:**
+- Node.js & Express.js
+- Prisma ORM with MySQL
+- JWT for authentication
+- Socket.io for real-time features
+- Swagger for API documentation
 
-### Backend
-- **Node.js**
-- **Express.js** 
-- **Prisma ORM** 
-- **MySQL** 
-- **JWT**
-- **bcryptjs** 
-- **Socket.io**
-- **CORS**
-
-
-## Project Structure
+## 📁 Project Structure
 
 ```
-scaler-assignment/
-├── frontend/                 # React frontend application
+QuickBook/
+├── frontend/          # React application
 │   ├── src/
-│   │   ├── components/       # Reusable UI components
-│   │   ├── pages/           # Page components
-│   │   ├── admin/           # Admin panel components
-│   │   ├── api/             # API service functions
-│   │   ├── store/           # Zustand state management
-│   │   ├── services/        # WebSocket and other services
-│   │   └── utils/           # Utility functions
-│   ├── public/              # Static assets
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── admin/
+│   │   ├── api/
+│   │   └── store/
 │   └── package.json
-├── backend/                 # Node.js backend API
+├── backend/           # Node.js API
 │   ├── src/
-│   │   ├── controllers/     # Request handlers
-│   │   ├── middleware/      # Custom middleware
-│   │   ├── routes/          # API routes
-│   │   ├── utils/           # Helper functions
-│   │   └── server.js        # Main server file
+│   │   ├── controllers/
+│   │   ├── routes/
+│   │   ├── middlewares/
+│   │   └── utils/
 │   ├── prisma/
-│   │   ├── schema.prisma    # Database schema
-│   │   └── migrations/      # Database migrations
 │   └── package.json
-├── docs/                    # Documentation and screenshots
-│   └── screenshots/
 └── README.md
 ```
 
-## Database Schema
+## 🚧 Current Status
 
-The application uses MySQL with Prisma ORM. The database consists of the following main entities:
+**What's Working:**
+- ✅ User authentication (login/signup)
+- ✅ Movie browsing and details
+- ✅ Cinema and show listings
+- ✅ Interactive seat selection
+- ✅ Basic booking functionality
+- ✅ Admin dashboard basics
+- ✅ Real-time seat updates
 
-![Database Schema Diagram](./docs/db-schema-diagram.png)
-*Complete database schema showing relationships between entities*
+**In Progress:**
+- 🔄 Enhanced admin analytics
+- 🔄 Advanced booking management
+- 🔄 Performance optimization
+- 🔄 Comprehensive testing
 
-**Database Schema**: [View Interactive Schema](https://dbdiagram.io/d/movieBooking-68d199ca7c85fb9961db1ed0)
+**Planned:**
+- 📋 Payment gateway integration
+- 📋 Email notifications
+- 📋 Advanced search and filters
+- 📋 Mobile app version
+- 📋 Multi-language support
 
-### Core Entities
-
-- **Users** - User authentication and profiles
-- **Movies** - Movie information and metadata
-- **Cinemas** - Cinema locations and details  
-- **Screens** - Individual screens within cinemas
-- **Shows** - Movie showtimes and scheduling
-- **Seats** - Seat layout and availability
-- **Bookings** - User reservations and payments
-
-### Key Relationships
-
-- Users can have multiple Bookings
-- Movies are shown in multiple Shows
-- Cinemas contain multiple Screens
-- Shows belong to one Screen and one Movie
-- Bookings contain multiple Seats
-- Seats belong to one Screen
-
-## Local Development Setup
+## 💻 Local Development Setup
 
 ### Prerequisites
+- Node.js (v18 or higher)
+- MySQL database
+- npm or yarn
 
-Make sure you have the following installed on your system:
+### Installation
 
-- **Node.js** (version 18 or higher)
-- **npm** or **yarn** package manager
-- **MySQL** 
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/amansingh4012/QuickBook.git
+   cd QuickBook
+   ```
 
-### Step 1: Clone the Repository
-
-```bash
-git clone https://github.com/Dev07-Harsh/scaler-assignment.git
-cd scaler-assignment
-```
-
-### Step 2: Backend Setup
-
-1. **Navigate to backend directory**:
+2. **Backend Setup**
    ```bash
    cd backend
-   ```
-
-2. **Install dependencies**:
-   ```bash
    npm install
-   ```
-
-3. **Create environment file**:
-   ```bash
-   cp .env.example .env
-   ```
-
-4. **Configure environment variables** in `.env`:
-   ```env
-   # Database Configuration
-   DATABASE_URL="mysql://user:password@localhost:3306/movie_booking_db"
    
-   # JWT Configuration
-   JWT_SECRET="your-super-secure-jwt-secret-key-here"
-   JWT_EXPIRES_IN="7d"
+   # Create .env file with your configuration
+   # DATABASE_URL="mysql://user:password@localhost:3306/quickbook_db"
+   # JWT_SECRET="your-secret-key"
+   # PORT=3000
    
-   # Server Configuration
-   PORT=3000
-   
-   ```
-
-5. **Run database migrations**:
-   ```bash
    npx prisma migrate dev
-   ```
-
-6. **Generate Prisma client**:
-   ```bash
    npx prisma generate
-   ```
-
-
-7. **Start the backend server**:
-   ```bash
    npm run dev
    ```
 
-   The backend API will be available at `http://localhost:3000`
-
-### Step 3: Frontend Setup
-
-1. **Open a new terminal** and navigate to frontend directory:
+3. **Frontend Setup**
    ```bash
    cd frontend
-   ```
-
-2. **Install dependencies**:
-   ```bash
    npm install
-   ```
-
-3. **Create environment file**:
-   ```bash
-   cp .env.example .env
-   ```
-
-4. **Configure environment variables** in `.env`:
-   ```env
-   VITE_API_BASE_URL=http://localhost:3000/api
-   ```
-
-5. **Start the development server**:
-   ```bash
+   
+   # Create .env file
+   # VITE_API_BASE_URL=http://localhost:3000/api
+   
    npm run dev
    ```
 
-   The frontend application will be available at `http://localhost:5173`
+4. **Access the application**
+   - Frontend: http://localhost:5173
+   - API Documentation: http://localhost:3000/api-docs
 
-### Step 5: Verify Installation
+## 📚 Learning Goals
 
-1. **Open your browser** and go to `http://localhost:5173`
+Through this project, I'm gaining hands-on experience with:
 
+- Full-stack JavaScript development
+- Real-time web applications with WebSockets
+- Database design and relationships with Prisma ORM
+- RESTful API design and documentation
+- Authentication and authorization patterns
+- State management in React
+- Modern CSS with TailwindCSS
+- Deployment and DevOps practices
 
-## Key Features
+## 🎓 Why This Project?
 
-### User Features
-- **Movie Browsing** - Browse available movies with posters and details
-- **Cinema Selection** - Choose from available cinemas and showtimes
-- **Interactive Seat Selection** - Real-time seat availability with visual seat map
-- **Secure Booking** - JWT-based authentication and secure payment processing
-- **Booking History** - View and manage past bookings
-- **Responsive Design** - Optimized for desktop, tablet, and mobile devices
-
-### Admin Features
-- **Dashboard Analytics** - Overview of bookings, revenue, and system metrics
-- **Movie Management** - Add, edit, and delete movies with poster uploads
-- **Cinema Management** - Manage cinema locations and screen configurations
-- **Show Scheduling** - Create and manage movie showtimes
-- **Booking Oversight** - View and manage all user bookings
-- **Real-time Updates** - Live booking status and seat availability
-
-### Admin Access
-
-To access the admin dashboard, navigate to `/admin` after logging in with admin credentials.
-
-**For Testing Purposes:**
-1. **Option 1**: Create a regular user account, then update the user role to `ADMIN` in the database
-2. **Option 2**: Add admin users directly through database seeding operations
-
-
-## Authentication
-
-The application uses JWT (JSON Web Tokens) for authentication:
-
-- **Registration** - Users can create new accounts
-- **Login** - Email and password authentication
-- **Role-based Access** - Different permissions for users and admin
-- **Protected Routes** - Frontend and backend route protection
-
-
+Cinema booking systems involve interesting technical challenges:
+- **Concurrency:** Multiple users booking seats simultaneously
+- **Real-time Updates:** Live seat availability across sessions
+- **Complex Relationships:** Movies, cinemas, screens, shows, and bookings
+- **User Experience:** Intuitive booking flow with proper error handling
+- **Role Management:** Different interfaces for users and administrators
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+MIT License - See [LICENSE](LICENSE) file for details.
 
+## 👨‍💻 Developer
+
+**Aman Kumar Singh**
+- GitHub: [@amansingh4012](https://github.com/amansingh4012)
 
 ---
 
-**Built by [Dev07-Harsh](https://github.com/Dev07-Harsh)**
+*Last Updated: October 2025*
 
-*Last updated: September 2025*
+> 💡 **Note:** This project is under active development. Features and documentation are continuously being updated and improved.
