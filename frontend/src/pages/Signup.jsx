@@ -80,7 +80,7 @@ const Signup = () => {
             <span className="text-white font-bold text-xl">MB</span>
           </div>
           <h2 className="text-3xl font-bold text-slate-900">Create account</h2>
-          <p className="mt-2 text-sm text-slate-600">Get started with MovieBooking</p>
+          <p className="mt-2 text-sm text-slate-600">Get started with QuickBook</p>
         </div>
 
         <form className="mt-8 space-y-6" onSubmit={handleSubmit}>

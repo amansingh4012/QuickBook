@@ -1,7 +1,7 @@
 {
-  "name": "quick-book-backend",
+  "name": "quickbook-backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "QuickBook Cinema Booking System - Backend API",
   "main": "src/server.js",
   "scripts": {
     "dev": "nodemon src/server.js",

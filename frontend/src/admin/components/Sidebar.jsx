@@ -29,7 +29,7 @@ const Sidebar = ({ open, setOpen }) => {
           {/* Logo */}
           <div className="flex h-16 shrink-0 items-center border-b border-gray-100">
             <h1 className="text-xl font-bold text-slate-800">
-              MovieBooking Admin
+              QuickBook Admin
             </h1>
           </div>
           

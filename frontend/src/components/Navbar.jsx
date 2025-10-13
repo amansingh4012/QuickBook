@@ -25,10 +25,10 @@ const Navbar = () => {
             className="flex items-center space-x-2 flex-shrink-0"
           >
             <div className="w-8 h-8 bg-slate-800 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">MB</span>
+              <span className="text-white font-bold text-sm">QB</span>
             </div>
             <span className="text-lg sm:text-xl font-semibold text-slate-900">
-              MovieBooking
+              QuickBook
             </span>
           </Link>
 
@@ -131,10 +131,10 @@ const Navbar = () => {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <div className="w-8 h-8 bg-slate-800 rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-sm">MB</span>
+                  <span className="text-white font-bold text-sm">QB</span>
                 </div>
                 <span className="text-lg font-semibold text-slate-900">
-                  MovieBooking
+                  QuickBook
                 </span>
               </Link>
               <button
