@@ -8,10 +8,6 @@ QuickBook is a comprehensive cinema ticket booking application built with React,
 
 This project demonstrates modern web development practices, real-time communication, and scalable architecture design.
 
-## 🎥 Demo
-
-**Live Application**: [View Demo](https://scaler-assignment-five.vercel.app/) *(if deployed)*
-
 **Demo Credentials**:
 - **Admin**: admin@gmail.com / 123456
 - **User**: test@gmail.com / 123456
@@ -207,7 +203,7 @@ While the core functionality is complete, potential future improvements include:
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/amansingh4012/QuickBook/issues).
+Contributions, issues, and feature requests are welcome!
 
 ## �📄 License
 
@@ -217,7 +213,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Aman Kumar Singh**
 - GitHub: [@amansingh4012](https://github.com/amansingh4012)
-- LinkedIn: [Connect with me](https://www.linkedin.com/in/amansingh4012) *(update with your profile)*
+
 
 ## 📧 Contact
 
