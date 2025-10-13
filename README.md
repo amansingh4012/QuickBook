@@ -1,6 +1,6 @@
 # QuickBook - Cinema Booking System 🎬
 
-> **✨ PROJECT COMPLETE** | Full-Stack Cinema Booking Application
+> Full-Stack Cinema Booking Application
 
 ## 📖 About This Project
 
