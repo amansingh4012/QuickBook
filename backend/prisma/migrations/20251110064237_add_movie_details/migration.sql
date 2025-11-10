@@ -1,0 +1,13 @@
+-- AlterTable
+ALTER TABLE `movie` ADD COLUMN `bannerUrl` VARCHAR(500) NULL,
+    ADD COLUMN `cast` VARCHAR(500) NULL,
+    ADD COLUMN `certificate` VARCHAR(10) NULL,
+    ADD COLUMN `director` VARCHAR(200) NULL,
+    ADD COLUMN `genre` VARCHAR(200) NULL,
+    ADD COLUMN `language` VARCHAR(100) NULL,
+    ADD COLUMN `rating` VARCHAR(10) NULL,
+    ADD COLUMN `releaseDate` DATETIME(3) NULL,
+    ADD COLUMN `trailerUrl` VARCHAR(500) NULL,
+    ADD COLUMN `updatedAt` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
+    MODIFY `description` TEXT NULL,
+    MODIFY `posterUrl` VARCHAR(500) NULL;

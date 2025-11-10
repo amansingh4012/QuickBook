@@ -15,7 +15,8 @@ const BookingHistory = () => {
     try {
       setLoading(true);
       const response = await bookingAPI.getBookingHistory();
-      setBookings(response.data.data || []);
+      const bookingsData = response.data.data || [];
+      setBookings(bookingsData);
     } catch (err) {
       setError('Failed to load booking history');
       console.error('Error fetching booking history:', err);
@@ -36,7 +37,7 @@ const BookingHistory = () => {
       // Update the booking status in the local state immediately
       setBookings(prevBookings => 
         prevBookings.map(booking => 
-          (booking.id || booking.bookingId) === bookingId 
+          booking.bookingId === bookingId 
             ? { ...booking, status: 'CANCELLED' }
             : booking
         )
@@ -95,7 +96,7 @@ const BookingHistory = () => {
     );
   }
 
-  if (error) {
+  if (error && bookings.length === 0) {
     return (
       <div className="min-h-screen bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -127,6 +128,22 @@ const BookingHistory = () => {
           <h1 className="text-2xl font-semibold text-slate-900">Booking History</h1>
           <p className="text-slate-600 mt-1">View all your past movie bookings</p>
         </div>
+
+        {/* Error Banner */}
+        {error && bookings.length > 0 && (
+          <div className="mb-4 bg-red-50 border border-red-200 rounded-lg p-4">
+            <div className="flex">
+              <div className="flex-shrink-0">
+                <svg className="h-5 w-5 text-red-400" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
+                </svg>
+              </div>
+              <div className="ml-3">
+                <p className="text-sm text-red-800">{error}</p>
+              </div>
+            </div>
+          </div>
+        )}
 
         {/* Content */}
         {bookings.length === 0 ? (
@@ -166,6 +183,9 @@ const BookingHistory = () => {
                       Seats
                     </th>
                     <th className="px-6 py-3 text-left text-xs font-medium text-slate-500 uppercase tracking-wider">
+                      Total Price
+                    </th>
+                    <th className="px-6 py-3 text-left text-xs font-medium text-slate-500 uppercase tracking-wider">
                       Date Booked
                     </th>
                     <th className="px-6 py-3 text-left text-xs font-medium text-slate-500 uppercase tracking-wider">
@@ -177,11 +197,17 @@ const BookingHistory = () => {
                   </tr>
                 </thead>
                 <tbody className="bg-white divide-y divide-slate-200">
-                  {bookings.map((booking) => (
+                  {bookings.map((booking) => {
+                    // Safety checks
+                    if (!booking.movie || !booking.show) {
+                      return null;
+                    }
+                    
+                    return (
                     <tr key={booking.bookingId} className="hover:bg-slate-50 transition-colors">
                       <td className="px-6 py-4 whitespace-nowrap">
                         <div className="flex items-center">
-                          {booking.movie.posterUrl && (
+                          {booking.movie?.posterUrl && (
                             <div className="flex-shrink-0 h-12 w-8 mr-4">
                               <img
                                 className="h-12 w-8 rounded object-cover"
@@ -195,23 +221,23 @@ const BookingHistory = () => {
                           )}
                           <div>
                             <div className="text-sm font-medium text-slate-900">
-                              {booking.movie.title}
+                              {booking.movie?.title || 'Unknown Movie'}
                             </div>
                           </div>
                         </div>
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap">
-                        <div className="text-sm text-slate-900">{booking.show.screen.cinema.name}</div>
-                        <div className="text-sm text-slate-500">{booking.show.screen.cinema.city}</div>
+                        <div className="text-sm text-slate-900">{booking.show?.screen?.cinema?.name || 'N/A'}</div>
+                        <div className="text-sm text-slate-500">{booking.show?.screen?.cinema?.city || 'N/A'}</div>
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap">
                         <div className="text-sm text-slate-900">
-                          {formatShowTime(booking.show.startTime)}
+                          {booking.show?.startTime ? formatShowTime(booking.show.startTime) : 'N/A'}
                         </div>
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap">
                         <div className="flex flex-wrap gap-1">
-                          {booking.seats.map((seat, index) => (
+                          {booking.seats && booking.seats.map((seat, index) => (
                             <span
                               key={index}
                               className="inline-flex items-center px-2 py-1 rounded-md text-xs font-medium bg-slate-100 text-slate-800"
@@ -222,8 +248,13 @@ const BookingHistory = () => {
                         </div>
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap">
+                        <div className="text-sm font-medium text-slate-900">
+                          ₹{booking.totalPrice || 0}
+                        </div>
+                      </td>
+                      <td className="px-6 py-4 whitespace-nowrap">
                         <div className="text-sm text-slate-900">
-                          {formatDate(booking.createdAt)}
+                          {booking.createdAt ? formatDate(booking.createdAt) : 'N/A'}
                         </div>
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap">
@@ -234,17 +265,17 @@ const BookingHistory = () => {
                             ? 'bg-red-100 text-red-800'
                             : 'bg-yellow-100 text-yellow-800'
                         }`}>
-                          {booking.status}
+                          {booking.status || 'UNKNOWN'}
                         </span>
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                         {canCancelBooking(booking) ? (
                           <button
-                            onClick={() => handleCancelBooking(booking.id || booking.bookingId)}
-                            disabled={cancellingBooking === (booking.id || booking.bookingId)}
+                            onClick={() => handleCancelBooking(booking.bookingId)}
+                            disabled={cancellingBooking === booking.bookingId}
                             className="inline-flex items-center px-3 py-1.5 border border-red-300 text-red-700 bg-white hover:bg-red-50 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed rounded-md text-xs font-medium transition-colors"
                           >
-                            {cancellingBooking === (booking.id || booking.bookingId) ? (
+                            {cancellingBooking === booking.bookingId ? (
                               <>
                                 <svg className="animate-spin -ml-1 mr-2 h-3 w-3 text-red-700" fill="none" viewBox="0 0 24 24">
                                   <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
@@ -263,7 +294,8 @@ const BookingHistory = () => {
                         )}
                       </td>
                     </tr>
-                  ))}
+                    );
+                  })}
                 </tbody>
               </table>
             </div>

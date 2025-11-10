@@ -98,14 +98,37 @@ const createMovie = async (req, res, next) => {
       });
     }
 
-    const { title, description, durationMin, posterUrl } = req.body;
+    const { 
+      title, 
+      description, 
+      durationMin, 
+      posterUrl,
+      bannerUrl,
+      trailerUrl,
+      genre,
+      language,
+      rating,
+      releaseDate,
+      director,
+      cast,
+      certificate
+    } = req.body;
 
     const movie = await prisma.movie.create({
       data: {
         title,
         description,
         durationMin,
-        posterUrl
+        posterUrl,
+        bannerUrl,
+        trailerUrl,
+        genre,
+        language,
+        rating,
+        releaseDate: releaseDate ? new Date(releaseDate) : null,
+        director,
+        cast,
+        certificate
       }
     });
 
@@ -131,7 +154,21 @@ const updateMovie = async (req, res, next) => {
     }
 
     const { id } = req.params;
-    const { title, description, durationMin, posterUrl } = req.body;
+    const { 
+      title, 
+      description, 
+      durationMin, 
+      posterUrl,
+      bannerUrl,
+      trailerUrl,
+      genre,
+      language,
+      rating,
+      releaseDate,
+      director,
+      cast,
+      certificate
+    } = req.body;
 
     const movie = await prisma.movie.update({
       where: { id: parseInt(id) },
@@ -139,7 +176,16 @@ const updateMovie = async (req, res, next) => {
         title,
         description,
         durationMin,
-        posterUrl
+        posterUrl,
+        bannerUrl,
+        trailerUrl,
+        genre,
+        language,
+        rating,
+        releaseDate: releaseDate ? new Date(releaseDate) : null,
+        director,
+        cast,
+        certificate
       }
     });
 

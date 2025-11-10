@@ -20,7 +20,16 @@ const MovieManager = () => {
     title: '',
     description: '',
     durationMin: '',
-    posterUrl: ''
+    posterUrl: '',
+    bannerUrl: '',
+    trailerUrl: '',
+    genre: '',
+    language: '',
+    rating: '',
+    releaseDate: '',
+    director: '',
+    cast: '',
+    certificate: ''
   });
   const [submitting, setSubmitting] = useState(false);
 
@@ -93,7 +102,16 @@ const MovieManager = () => {
       title: movie.title,
       description: movie.description || '',
       durationMin: movie.durationMin ? movie.durationMin.toString() : '',
-      posterUrl: movie.posterUrl || ''
+      posterUrl: movie.posterUrl || '',
+      bannerUrl: movie.bannerUrl || '',
+      trailerUrl: movie.trailerUrl || '',
+      genre: movie.genre || '',
+      language: movie.language || '',
+      rating: movie.rating || '',
+      releaseDate: movie.releaseDate ? movie.releaseDate.split('T')[0] : '',
+      director: movie.director || '',
+      cast: movie.cast || '',
+      certificate: movie.certificate || ''
     });
     setShowModal(true);
   };
@@ -104,7 +122,16 @@ const MovieManager = () => {
       title: '',
       description: '',
       durationMin: '',
-      posterUrl: ''
+      posterUrl: '',
+      bannerUrl: '',
+      trailerUrl: '',
+      genre: '',
+      language: '',
+      rating: '',
+      releaseDate: '',
+      director: '',
+      cast: '',
+      certificate: ''
     });
     setShowModal(true);
   };
@@ -116,7 +143,16 @@ const MovieManager = () => {
       title: '',
       description: '',
       durationMin: '',
-      posterUrl: ''
+      posterUrl: '',
+      bannerUrl: '',
+      trailerUrl: '',
+      genre: '',
+      language: '',
+      rating: '',
+      releaseDate: '',
+      director: '',
+      cast: '',
+      certificate: ''
     });
     setError(null);
   };
@@ -296,90 +332,243 @@ const MovieManager = () => {
                         {editingMovie ? 'Edit Movie' : 'Add New Movie'}
                       </h3>
                       
-                      <div className="grid grid-cols-1 gap-4">
+                      <div className="grid grid-cols-1 gap-4 max-h-[60vh] overflow-y-auto pr-2">
+                        {/* Basic Info */}
                         <div>
-                          <label htmlFor="title" className="block text-sm font-medium text-gray-700 mb-1">
-                            Movie Title *
-                          </label>
-                          <input
-                            type="text"
-                            id="title"
-                            value={formData.title}
-                            onChange={(e) => setFormData({ ...formData, title: e.target.value })}
-                            className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-slate-500 focus:border-slate-500"
-                            placeholder="Enter movie title"
-                            required
-                          />
-                        </div>
-                        
-                        <div>
-                          <label htmlFor="description" className="block text-sm font-medium text-gray-700 mb-1">
-                            Description
-                          </label>
-                          <textarea
-                            id="description"
-                            value={formData.description}
-                            onChange={(e) => setFormData({ ...formData, description: e.target.value })}
-                            rows={3}
-                            className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-slate-500 focus:border-slate-500"
-                            placeholder="Enter movie description"
-                          />
-                        </div>
-                        
-                        <div className="grid grid-cols-2 gap-4">
-                          <div>
-                            <label htmlFor="durationMin" className="block text-sm font-medium text-gray-700 mb-1">
-                              Duration (minutes)
-                            </label>
-                            <input
-                              type="number"
-                              id="durationMin"
-                              value={formData.durationMin}
-                              onChange={(e) => setFormData({ ...formData, durationMin: e.target.value })}
-                              className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-slate-500 focus:border-slate-500"
-                              placeholder="120"
-                              min="1"
-                              max="600"
-                            />
-                          </div>
+                          <h4 className="text-sm font-semibold text-gray-900 mb-3">Basic Information</h4>
                           
-                          <div>
-                            <label htmlFor="posterUrl" className="block text-sm font-medium text-gray-700 mb-1">
-                              Poster URL
-                            </label>
-                            <input
-                              type="url"
-                              id="posterUrl"
-                              value={formData.posterUrl}
-                              onChange={(e) => setFormData({ ...formData, posterUrl: e.target.value })}
-                              className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-slate-500 focus:border-slate-500"
-                              placeholder="https://example.com/poster.jpg"
-                            />
-                          </div>
-                        </div>
-                        
-                        {/* Poster Preview */}
-                        {formData.posterUrl && (
-                          <div>
-                            <label className="block text-sm font-medium text-gray-700 mb-1">
-                              Poster Preview
-                            </label>
-                            <div className="w-32 h-48 bg-gray-100 rounded-md overflow-hidden">
-                              <img
-                                src={formData.posterUrl}
-                                alt="Poster preview"
-                                className="w-full h-full object-cover"
-                                onError={(e) => {
-                                  e.target.style.display = 'none';
-                                  e.target.nextSibling.style.display = 'flex';
-                                }}
+                          <div className="space-y-4">
+                            <div>
+                              <label htmlFor="title" className="block text-sm font-medium text-gray-700 mb-1">
+                                Movie Title *
+                              </label>
+                              <input
+                                type="text"
+                                id="title"
+                                value={formData.title}
+                                onChange={(e) => setFormData({ ...formData, title: e.target.value })}
+                                className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-slate-500 focus:border-slate-500"
+                                placeholder="e.g., Avengers: Endgame"
+                                required
                               />
-                              <div className="w-full h-full flex items-center justify-center hidden">
-                                <PhotoIcon className="h-8 w-8 text-gray-400" />
-                              </div>
+                            </div>
+                            
+                            <div>
+                              <label htmlFor="description" className="block text-sm font-medium text-gray-700 mb-1">
+                                Description
+                              </label>
+                              <textarea
+                                id="description"
+                                value={formData.description}
+                                onChange={(e) => setFormData({ ...formData, description: e.target.value })}
+                                rows={4}
+                                className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-slate-500 focus:border-slate-500"
+                                placeholder="Enter movie plot/description"
+                              />
                             </div>
                           </div>
-                        )}
+                        </div>
+
+                        {/* Movie Details */}
+                        <div className="border-t pt-4">
+                          <h4 className="text-sm font-semibold text-gray-900 mb-3">Movie Details</h4>
+                          
+                          <div className="grid grid-cols-2 gap-4">
+                            <div>
+                              <label htmlFor="genre" className="block text-sm font-medium text-gray-700 mb-1">
+                                Genre
+                              </label>
+                              <input
+                                type="text"
+                                id="genre"
+                                value={formData.genre}
+                                onChange={(e) => setFormData({ ...formData, genre: e.target.value })}
+                                className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-slate-500 focus:border-slate-500"
+                                placeholder="Action, Drama, Comedy"
+                              />
+                            </div>
+                            
+                            <div>
+                              <label htmlFor="language" className="block text-sm font-medium text-gray-700 mb-1">
+                                Language
+                              </label>
+                              <input
+                                type="text"
+                                id="language"
+                                value={formData.language}
+                                onChange={(e) => setFormData({ ...formData, language: e.target.value })}
+                                className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-slate-500 focus:border-slate-500"
+                                placeholder="English, Hindi, etc."
+                              />
+                            </div>
+                            
+                            <div>
+                              <label htmlFor="durationMin" className="block text-sm font-medium text-gray-700 mb-1">
+                                Duration (minutes)
+                              </label>
+                              <input
+                                type="number"
+                                id="durationMin"
+                                value={formData.durationMin}
+                                onChange={(e) => setFormData({ ...formData, durationMin: e.target.value })}
+                                className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-slate-500 focus:border-slate-500"
+                                placeholder="120"
+                                min="1"
+                                max="600"
+                              />
+                            </div>
+                            
+                            <div>
+                              <label htmlFor="releaseDate" className="block text-sm font-medium text-gray-700 mb-1">
+                                Release Date
+                              </label>
+                              <input
+                                type="date"
+                                id="releaseDate"
+                                value={formData.releaseDate}
+                                onChange={(e) => setFormData({ ...formData, releaseDate: e.target.value })}
+                                className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-slate-500 focus:border-slate-500"
+                              />
+                            </div>
+                            
+                            <div>
+                              <label htmlFor="rating" className="block text-sm font-medium text-gray-700 mb-1">
+                                Rating (IMDb/TMDB)
+                              </label>
+                              <input
+                                type="text"
+                                id="rating"
+                                value={formData.rating}
+                                onChange={(e) => setFormData({ ...formData, rating: e.target.value })}
+                                className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-slate-500 focus:border-slate-500"
+                                placeholder="8.5"
+                              />
+                            </div>
+                            
+                            <div>
+                              <label htmlFor="certificate" className="block text-sm font-medium text-gray-700 mb-1">
+                                Certificate
+                              </label>
+                              <select
+                                id="certificate"
+                                value={formData.certificate}
+                                onChange={(e) => setFormData({ ...formData, certificate: e.target.value })}
+                                className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-slate-500 focus:border-slate-500"
+                              >
+                                <option value="">Select</option>
+                                <option value="U">U - Universal</option>
+                                <option value="U/A">U/A - Parental Guidance</option>
+                                <option value="A">A - Adults Only</option>
+                                <option value="S">S - Special</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* Cast & Crew */}
+                        <div className="border-t pt-4">
+                          <h4 className="text-sm font-semibold text-gray-900 mb-3">Cast & Crew</h4>
+                          
+                          <div className="space-y-4">
+                            <div>
+                              <label htmlFor="director" className="block text-sm font-medium text-gray-700 mb-1">
+                                Director
+                              </label>
+                              <input
+                                type="text"
+                                id="director"
+                                value={formData.director}
+                                onChange={(e) => setFormData({ ...formData, director: e.target.value })}
+                                className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-slate-500 focus:border-slate-500"
+                                placeholder="e.g., Christopher Nolan"
+                              />
+                            </div>
+                            
+                            <div>
+                              <label htmlFor="cast" className="block text-sm font-medium text-gray-700 mb-1">
+                                Cast (comma separated)
+                              </label>
+                              <input
+                                type="text"
+                                id="cast"
+                                value={formData.cast}
+                                onChange={(e) => setFormData({ ...formData, cast: e.target.value })}
+                                className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-slate-500 focus:border-slate-500"
+                                placeholder="e.g., Actor 1, Actor 2, Actor 3"
+                              />
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* Media */}
+                        <div className="border-t pt-4">
+                          <h4 className="text-sm font-semibold text-gray-900 mb-3">Media</h4>
+                          
+                          <div className="space-y-4">
+                            <div>
+                              <label htmlFor="posterUrl" className="block text-sm font-medium text-gray-700 mb-1">
+                                Poster URL
+                              </label>
+                              <input
+                                type="url"
+                                id="posterUrl"
+                                value={formData.posterUrl}
+                                onChange={(e) => setFormData({ ...formData, posterUrl: e.target.value })}
+                                className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-slate-500 focus:border-slate-500"
+                                placeholder="https://example.com/poster.jpg"
+                              />
+                            </div>
+                            
+                            <div>
+                              <label htmlFor="bannerUrl" className="block text-sm font-medium text-gray-700 mb-1">
+                                Banner URL
+                              </label>
+                              <input
+                                type="url"
+                                id="bannerUrl"
+                                value={formData.bannerUrl}
+                                onChange={(e) => setFormData({ ...formData, bannerUrl: e.target.value })}
+                                className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-slate-500 focus:border-slate-500"
+                                placeholder="https://example.com/banner.jpg"
+                              />
+                            </div>
+                            
+                            <div>
+                              <label htmlFor="trailerUrl" className="block text-sm font-medium text-gray-700 mb-1">
+                                Trailer URL (YouTube)
+                              </label>
+                              <input
+                                type="url"
+                                id="trailerUrl"
+                                value={formData.trailerUrl}
+                                onChange={(e) => setFormData({ ...formData, trailerUrl: e.target.value })}
+                                className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-slate-500 focus:border-slate-500"
+                                placeholder="https://www.youtube.com/watch?v=..."
+                              />
+                            </div>
+                            
+                            {/* Poster Preview */}
+                            {formData.posterUrl && (
+                              <div>
+                                <label className="block text-sm font-medium text-gray-700 mb-1">
+                                  Poster Preview
+                                </label>
+                                <div className="w-32 h-48 bg-gray-100 rounded-md overflow-hidden">
+                                  <img
+                                    src={formData.posterUrl}
+                                    alt="Poster preview"
+                                    className="w-full h-full object-cover"
+                                    onError={(e) => {
+                                      e.target.style.display = 'none';
+                                      e.target.parentElement.classList.add('flex', 'items-center', 'justify-center');
+                                    }}
+                                  />
+                                  <PhotoIcon className="h-8 w-8 text-gray-400" />
+                                </div>
+                              </div>
+                            )}
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>

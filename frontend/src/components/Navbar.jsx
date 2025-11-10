@@ -68,10 +68,24 @@ const Navbar = () => {
                 )}
 
                 <div className="flex items-center space-x-2 pl-2 border-l border-slate-200">
-                  <UserCircleIcon className="h-6 w-6 text-slate-400" />
-                  <span className="text-sm text-slate-600 hidden lg:block">
-                    {user?.name || 'User'}
-                  </span>
+                  <Link
+                    to="/profile"
+                    className="flex items-center space-x-2 px-2 py-1 rounded-lg hover:bg-slate-100 transition-colors"
+                    title="View Profile"
+                  >
+                    {user?.profilePicture ? (
+                      <img 
+                        src={user.profilePicture} 
+                        alt="Profile" 
+                        className="h-8 w-8 rounded-full object-cover border-2 border-slate-200"
+                      />
+                    ) : (
+                      <UserCircleIcon className="h-6 w-6 text-slate-400 hover:text-slate-600" />
+                    )}
+                    <span className="text-sm text-slate-600 hidden lg:block">
+                      {user?.name || 'User'}
+                    </span>
+                  </Link>
                   <button
                     onClick={handleLogout}
                     className="text-slate-600 hover:text-slate-900 px-3 py-1.5 text-sm font-medium transition-colors"
@@ -210,8 +224,20 @@ const Navbar = () => {
                 {/* User Info & Logout */}
                 {isAuthenticated && (
                   <div className="py-6">
-                    <div className="flex items-center gap-3 -mx-3 px-3 py-3 bg-slate-50 rounded-lg mb-3">
-                      <UserCircleIcon className="h-8 w-8 text-slate-400" />
+                    <Link
+                      to="/profile"
+                      className="flex items-center gap-3 -mx-3 px-3 py-3 bg-slate-50 rounded-lg mb-3 hover:bg-slate-100 transition-colors"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      {user?.profilePicture ? (
+                        <img 
+                          src={user.profilePicture} 
+                          alt="Profile" 
+                          className="h-12 w-12 rounded-full object-cover border-2 border-slate-200"
+                        />
+                      ) : (
+                        <UserCircleIcon className="h-8 w-8 text-slate-400" />
+                      )}
                       <div>
                         <div className="text-sm font-medium text-slate-900">
                           {user?.name || 'User'}
@@ -220,7 +246,7 @@ const Navbar = () => {
                           {user?.email}
                         </div>
                       </div>
-                    </div>
+                    </Link>
                     <button
                       onClick={handleLogout}
                       className="-mx-3 block w-full text-left rounded-lg px-3 py-2 text-base font-semibold leading-7 text-slate-700 hover:bg-slate-50 transition-colors"

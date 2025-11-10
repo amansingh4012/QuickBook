@@ -4,6 +4,7 @@ const { Server } = require('socket.io');
 const cors = require('cors');
 const dotenv = require('dotenv');
 const authRoutes = require('./routes/authRoutes');
+const userRoutes = require('./routes/userRoutes');
 const cinemaRoutes = require('./routes/cinemas');
 const screenRoutes = require('./routes/screens');
 const movieRoutes = require('./routes/movies');
@@ -56,6 +57,7 @@ app.get('/api/health', (req, res) => {
 });
 
 // Protected routes
+app.use('/api/users', userRoutes);
 app.use('/api/cinemas', authMiddleware, cinemaRoutes);
 app.use('/api/screens', authMiddleware, screenRoutes);
 app.use('/api/movies', authMiddleware, movieRoutes);
@@ -64,16 +66,6 @@ app.use('/api/bookings', authMiddleware, bookingRoutes);
 
 // Admin routes (authentication and role validation handled in adminRoutes)
 app.use('/api/admin', adminRoutes);
-
-app.get('/api/profile', authMiddleware, (req, res) => {
-  res.json({
-    success: true,
-    message: 'Profile data retrieved successfully',
-    data: {
-      user: req.user
-    }
-  });
-});
 
 // Error handling middleware
 app.use(errorHandler);

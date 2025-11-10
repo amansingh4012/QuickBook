@@ -167,6 +167,36 @@ const MovieDetails = () => {
           </Link>
         </div>
 
+        {/* Banner Section */}
+        {movie.bannerUrl && (
+          <div className="relative w-full h-64 md:h-96 rounded-xl overflow-hidden mb-8">
+            <img
+              src={movie.bannerUrl}
+              alt={`${movie.title} banner`}
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+            <div className="absolute bottom-6 left-6">
+              <h1 className="text-4xl md:text-5xl font-bold text-white mb-2">{movie.title}</h1>
+              <div className="flex flex-wrap items-center gap-2">
+                {movie.certificate && (
+                  <span className="px-3 py-1 bg-white/20 backdrop-blur-sm text-white text-sm font-medium rounded-md border border-white/30">
+                    {movie.certificate}
+                  </span>
+                )}
+                {movie.rating && (
+                  <span className="inline-flex items-center px-3 py-1 bg-yellow-500/90 backdrop-blur-sm text-white text-sm font-medium rounded-md">
+                    <svg className="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                    {movie.rating}/10
+                  </span>
+                )}
+              </div>
+            </div>
+          </div>
+        )}
+
         {/* Movie Header */}
         <div className="bg-white rounded-xl shadow-sm border border-slate-200 p-6 mb-8">
           <div className="flex flex-col md:flex-row gap-6">
@@ -192,23 +222,95 @@ const MovieDetails = () => {
             </div>
             
             <div className="flex-1">
-              <h1 className="text-3xl font-bold text-slate-900 mb-4">{movie.title}</h1>
+              {!movie.bannerUrl && (
+                <h1 className="text-3xl font-bold text-slate-900 mb-4">{movie.title}</h1>
+              )}
               
               {movie.description && (
                 <p className="text-slate-600 mb-4 leading-relaxed">{movie.description}</p>
               )}
               
-              {movie.durationMin && (
-                <div className="inline-flex items-center bg-slate-100 px-3 py-1 rounded-full text-sm text-slate-600">
-                  <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              {/* Movie Info Grid */}
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-4">
+                {movie.genre && (
+                  <div className="bg-slate-50 rounded-lg p-3">
+                    <p className="text-xs text-slate-500 mb-1">Genre</p>
+                    <p className="text-sm font-medium text-slate-900">{movie.genre}</p>
+                  </div>
+                )}
+                {movie.language && (
+                  <div className="bg-slate-50 rounded-lg p-3">
+                    <p className="text-xs text-slate-500 mb-1">Language</p>
+                    <p className="text-sm font-medium text-slate-900">{movie.language}</p>
+                  </div>
+                )}
+                {movie.durationMin && (
+                  <div className="bg-slate-50 rounded-lg p-3">
+                    <p className="text-xs text-slate-500 mb-1">Duration</p>
+                    <p className="text-sm font-medium text-slate-900">
+                      {Math.floor(movie.durationMin / 60)}h {movie.durationMin % 60}m
+                    </p>
+                  </div>
+                )}
+                {movie.releaseDate && (
+                  <div className="bg-slate-50 rounded-lg p-3">
+                    <p className="text-xs text-slate-500 mb-1">Release Date</p>
+                    <p className="text-sm font-medium text-slate-900">
+                      {new Date(movie.releaseDate).toLocaleDateString('en-IN', { 
+                        day: 'numeric', 
+                        month: 'short', 
+                        year: 'numeric' 
+                      })}
+                    </p>
+                  </div>
+                )}
+              </div>
+
+              {/* Rating (if no banner) */}
+              {!movie.bannerUrl && movie.rating && (
+                <div className="inline-flex items-center bg-yellow-500 text-white px-3 py-1.5 rounded-lg text-sm font-medium mb-4">
+                  <svg className="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                   </svg>
-                  {movie.durationMin} minutes
+                  {movie.rating}/10 IMDb Rating
                 </div>
               )}
+
+              {/* Cast & Crew */}
+              <div className="space-y-3">
+                {movie.director && (
+                  <div>
+                    <span className="text-sm font-semibold text-slate-700">Director: </span>
+                    <span className="text-sm text-slate-600">{movie.director}</span>
+                  </div>
+                )}
+                {movie.cast && (
+                  <div>
+                    <span className="text-sm font-semibold text-slate-700">Cast: </span>
+                    <span className="text-sm text-slate-600">{movie.cast}</span>
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         </div>
+
+        {/* Trailer Section */}
+        {movie.trailerUrl && (
+          <div className="bg-white rounded-xl shadow-sm border border-slate-200 p-6 mb-8">
+            <h2 className="text-2xl font-bold text-slate-900 mb-4">Watch Trailer</h2>
+            <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+              <iframe
+                className="absolute top-0 left-0 w-full h-full rounded-lg"
+                src={movie.trailerUrl.replace('watch?v=', 'embed/')}
+                title={`${movie.title} Trailer`}
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        )}
 
         {/* Cinemas and Showtimes */}
         <div className="space-y-6">

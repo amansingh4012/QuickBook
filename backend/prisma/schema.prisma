@@ -8,16 +8,22 @@ datasource db {
 }
 
 model User {
-  id        Int       @id @default(autoincrement())
-  name      String
-  email     String    @unique
-  password  String
-  phone     String?   @db.VarChar(20)
-  role      UserRole  @default(USER)
-  bookings  Booking[]
-  seatHolds SeatHold[]
-  createdAt DateTime  @default(now())
-  updatedAt DateTime  @updatedAt
+  id             Int       @id @default(autoincrement())
+  name           String
+  email          String    @unique
+  password       String
+  phone          String?   @db.VarChar(20)
+  address        String?   @db.VarChar(500)
+  city           String?   @db.VarChar(100)
+  state          String?   @db.VarChar(100)
+  pincode        String?   @db.VarChar(10)
+  dateOfBirth    DateTime?
+  profilePicture String?   @db.VarChar(500)
+  role           UserRole  @default(USER)
+  bookings       Booking[]
+  seatHolds      SeatHold[]
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
 }
 
 enum UserRole {
@@ -44,11 +50,21 @@ model Screen {
 model Movie {
   id          Int      @id @default(autoincrement())
   title       String
-  description String?
+  description String?  @db.Text
   durationMin Int?
-  posterUrl   String?
+  posterUrl   String?  @db.VarChar(500)
+  bannerUrl   String?  @db.VarChar(500)
+  trailerUrl  String?  @db.VarChar(500)
+  genre       String?  @db.VarChar(200)
+  language    String?  @db.VarChar(100)
+  rating      String?  @db.VarChar(10)
+  releaseDate DateTime?
+  director    String?  @db.VarChar(200)
+  cast        String?  @db.VarChar(500)
+  certificate String?  @db.VarChar(10)
   shows       Show[]
   createdAt   DateTime @default(now())
+  updatedAt   DateTime @default(now()) @updatedAt
 }
 
 model Show {

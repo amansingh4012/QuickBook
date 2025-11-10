@@ -13,6 +13,7 @@ import Shows from './pages/Shows';
 import SeatSelection from './pages/SeatSelection';
 import BookingHistory from './pages/BookingHistory';
 import BookingConfirmation from './pages/BookingConfirmation';
+import Profile from './pages/Profile';
 
 // Admin imports
 import AdminLayout from './admin/components/AdminLayout';
@@ -48,7 +49,7 @@ function App() {
   useEffect(() => {
     checkAuth();
     initializeSocket();
-  }, []);
+  }, [checkAuth]);
 
   return (
     <Router>
@@ -120,6 +121,14 @@ function App() {
               element={
                 <ProtectedRoute>
                   <BookingConfirmation />
+                </ProtectedRoute>
+              } 
+            />
+            <Route 
+              path="/profile" 
+              element={
+                <ProtectedRoute>
+                  <Profile />
                 </ProtectedRoute>
               } 
             />

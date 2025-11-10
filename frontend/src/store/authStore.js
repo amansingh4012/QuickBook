@@ -31,6 +31,11 @@ export const useAuthStore = create(
         });
       },
 
+      updateUser: (userData) => {
+        localStorage.setItem('user', JSON.stringify(userData));
+        set({ user: userData });
+      },
+
       setLoading: (loading) => set({ isLoading: loading }),
 
       // Check if user is authenticated on app start
