@@ -23,7 +23,6 @@ A complete cinema booking system with:
   - View cinema locations and showtimes
   - Select seats with a visual seat map
   - Book tickets securely
-  - Download E-Tickets with QR codes (PDF)
   - View booking history
 
 - **For Cinema Administrators:**
@@ -35,8 +34,6 @@ A complete cinema booking system with:
 - **Technical Features:**
   - Real-time seat availability updates using Socket.io
   - Temporary seat blocking to prevent double bookings
-  - E-Ticket generation with QR codes and PDF download
-  - Ticket verification system for cinema staff
   - JWT-based authentication and authorization
   - RESTful API with comprehensive documentation
   - Responsive design for all devices
@@ -89,9 +86,7 @@ QuickBook/
 - ✅ **Interactive Seat Selection** - Visual seat map with real-time availability
 - ✅ **Real-time Updates** - Live seat availability using Socket.io
 - ✅ **Seat Hold System** - Temporary seat blocking to prevent double bookings
-- ✅ **Payment Gateway Integration** - Secure online payments with Stripe (Test Mode)
 - ✅ **Booking Management** - Create bookings and view booking history
-- ✅ **Payment History** - Track all payment transactions
 - ✅ **Booking Cancellation** - Cancel existing bookings
 - ✅ **Responsive Design** - Fully responsive across all devices
 
@@ -196,15 +191,16 @@ QuickBook/
 
 While the core functionality is complete, potential future improvements include:
 
+- Payment gateway integration (Stripe, Razorpay, PayPal)
+- E-Ticket generation with QR codes and PDF download
+- Ticket verification system for cinema staff
 - Email/SMS notifications for booking confirmations
-- QR code generation for tickets
 - Mobile app (React Native)
 - Advanced analytics and reporting
 - Movie recommendations based on user preferences
 - Multi-language support
 - Social media integration
 - Seat preference suggestions
-- Multiple payment gateways (Razorpay, PayPal)
 - Refund management system
 
 ## 🤝 Contributing
