@@ -11,9 +11,11 @@ import Movies from './pages/Movies';
 import MovieDetails from './pages/MovieDetails';
 import Shows from './pages/Shows';
 import SeatSelection from './pages/SeatSelection';
+import MockPaymentPage from './pages/MockPaymentPage';
 import BookingHistory from './pages/BookingHistory';
 import BookingConfirmation from './pages/BookingConfirmation';
 import Profile from './pages/Profile';
+import TicketVerification from './pages/TicketVerification';
 
 // Admin imports
 import AdminLayout from './admin/components/AdminLayout';
@@ -109,6 +111,14 @@ function App() {
               } 
             />
             <Route 
+              path="/payment" 
+              element={
+                <ProtectedRoute>
+                  <MockPaymentPage />
+                </ProtectedRoute>
+              } 
+            />
+            <Route 
               path="/bookings/history" 
               element={
                 <ProtectedRoute>
@@ -131,6 +141,10 @@ function App() {
                   <Profile />
                 </ProtectedRoute>
               } 
+            />
+            <Route 
+              path="/verify-ticket" 
+              element={<TicketVerification />} 
             />
 
             {/* Admin routes */}

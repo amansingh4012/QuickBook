@@ -127,11 +127,11 @@ const createBooking = async (req, res, next) => {
       };
     });
 
-    // 9. Release user's seat holds for this show
+    // 10. Release user's seat holds for this show
     const seatHoldManager = require('../utils/seatHoldManager');
     await seatHoldManager.unblockSeats(userId, null, showId);
 
-    // 10. Broadcast booking confirmation to all clients
+    // 11. Broadcast booking confirmation to all clients
     const socketManager = require('../utils/socketManager');
     socketManager.broadcastBookingConfirmed(parseInt(showId), {
       showId: parseInt(showId),
@@ -485,6 +485,8 @@ const cancelBooking = async (req, res, next) => {
     next(error);
   }
 };
+
+
 
 module.exports = {
   createBooking,

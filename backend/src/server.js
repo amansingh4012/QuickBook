@@ -10,6 +10,7 @@ const screenRoutes = require('./routes/screens');
 const movieRoutes = require('./routes/movies');
 const showRoutes = require('./routes/shows');
 const bookingRoutes = require('./routes/bookings');
+const paymentRoutes = require('./routes/payments');
 const adminRoutes = require('./routes/adminRoutes');
 const authMiddleware = require('./middlewares/authMiddleware');
 const errorHandler = require('./middlewares/errorHandler');
@@ -21,9 +22,18 @@ dotenv.config();
 
 const app = express();
 const server = http.createServer(app);
+
+// Allow multiple frontend origins for development
+const allowedOrigins = [
+  'http://localhost:5173',
+  'http://localhost:5174',
+  'http://localhost:5175',
+  process.env.FRONTEND_URL
+].filter(Boolean);
+
 const io = new Server(server, {
   cors: {
-    origin: process.env.FRONTEND_URL || "http://localhost:5173",
+    origin: allowedOrigins,
     methods: ["GET", "POST"],
     credentials: true
   }
@@ -34,8 +44,18 @@ const PORT = process.env.PORT || 3000;
 // Middleware
 app.use(express.json());
 app.use(cors({
-  origin: process.env.FRONTEND_URL || "http://localhost:5173",
-  credentials: true
+  origin: function (origin, callback) {
+    // Allow requests with no origin (like mobile apps or curl requests)
+    if (!origin) return callback(null, true);
+    
+    if (allowedOrigins.indexOf(origin) !== -1) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  credentials: true,
+  exposedHeaders: ['Content-Disposition', 'Content-Length']
 }));
 
 // Initialize Socket.io and managers
@@ -63,6 +83,7 @@ app.use('/api/screens', authMiddleware, screenRoutes);
 app.use('/api/movies', authMiddleware, movieRoutes);
 app.use('/api/shows', authMiddleware, showRoutes);
 app.use('/api/bookings', authMiddleware, bookingRoutes);
+app.use('/api/payments', paymentRoutes);
 
 // Admin routes (authentication and role validation handled in adminRoutes)
 app.use('/api/admin', adminRoutes);

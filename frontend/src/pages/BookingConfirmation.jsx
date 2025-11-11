@@ -7,6 +7,7 @@ const BookingConfirmation = () => {
 
   useEffect(() => {
     if (location.state?.booking) {
+      console.log('📋 Booking data received:', location.state.booking);
       setBooking(location.state.booking);
     }
   }, [location.state]);
@@ -115,8 +116,8 @@ const BookingConfirmation = () => {
               <h3 className="font-semibold text-slate-900 mb-3">Payment Summary</h3>
               <div className="space-y-2">
                 <div className="flex justify-between">
-                  <span className="text-slate-600">Seat Price (₹{booking.show?.price} × {JSON.parse(booking.seats).length})</span>
-                  <span className="text-slate-900">₹{(booking.show?.price * JSON.parse(booking.seats).length).toLocaleString()}</span>
+                  <span className="text-slate-600">Seat Price (₹{booking.show?.price} × {seatsArray.length})</span>
+                  <span className="text-slate-900">₹{(booking.show?.price * seatsArray.length).toLocaleString()}</span>
                 </div>
                 <div className="flex justify-between font-semibold text-lg pt-2 border-t border-slate-200">
                   <span className="text-slate-900">Total Amount</span>
@@ -135,6 +136,8 @@ const BookingConfirmation = () => {
                 </div>
               </div>
             </div>
+
+
           </div>
         </div>
 
@@ -148,7 +151,7 @@ const BookingConfirmation = () => {
           </Link>
           <Link
             to="/movies"
-            className="bg-slate-100 text-slate-800 px-6 py-3 rounded-lg hover:bg-slate-200 transition-colors text-center font-medium"
+            className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors text-center font-medium"
           >
             Book Another Movie
           </Link>

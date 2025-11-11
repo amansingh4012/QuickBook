@@ -40,6 +40,14 @@ export const bookingsAPI = {
   getSeatAvailability: (showId) => apiClient.get(`/bookings/seats/${showId}`),
 };
 
+// Payment API calls (Razorpay)
+export const paymentAPI = {
+  createOrder: (showId, seats) => apiClient.post('/payments/create-order', { showId, seats }),
+  verifyPayment: (paymentData) => apiClient.post('/payments/verify', paymentData),
+  getPaymentDetails: (paymentId) => apiClient.get(`/payments/${paymentId}`),
+  getPaymentHistory: () => apiClient.get('/payments/history'),
+};
+
 // Admin API calls
 export const adminAPI = {
   // Dashboard

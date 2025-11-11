@@ -20,12 +20,10 @@ const SeatSelection = () => {
   const [showDetails, setShowDetails] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [booking, setBooking] = useState(false);
   const [socketConnected, setSocketConnected] = useState(false);
   
   // Admin-specific state
   const [adminTooltip, setAdminTooltip] = useState(null);
-  const [hoveredSeat, setHoveredSeat] = useState(null);
   const [bookingModal, setBookingModal] = useState(null);
 
   // Socket event handlers
@@ -310,42 +308,21 @@ const SeatSelection = () => {
     return `${baseStyle} bg-white text-slate-700 border-slate-200 hover:border-slate-400 hover:bg-slate-50 cursor-pointer`;
   };
 
-  const handleBooking = async () => {
+  const handleBooking = () => {
     if (selectedSeats.length === 0) {
       setError('Please select at least one seat');
       setTimeout(() => setError(null), 3000);
       return;
     }
 
-    try {
-      setBooking(true);
-      const bookingData = {
+    // Navigate to payment page with booking details
+    navigate('/payment', {
+      state: {
         showId: parseInt(showId),
-        seats: selectedSeats
-      };
-      
-      const response = await bookingAPI.createBooking(bookingData);
-      
-      if (response.data.success) {
-        navigate('/bookings/confirmation', { 
-          state: { booking: response.data }
-        });
+        seats: selectedSeats,
+        showDetails
       }
-    } catch (err) {
-      let errorMessage = 'Booking failed. Please try again.';
-      
-      if (err.response?.data?.message) {
-        errorMessage = err.response.data.message;
-      }
-      
-      setError(errorMessage);
-      console.error('Error creating booking:', err);
-      
-      // Refresh seat layout to get updated availability
-      fetchSeatLayout();
-    } finally {
-      setBooking(false);
-    }
+    });
   };
 
   if (loading) {
@@ -492,7 +469,7 @@ const SeatSelection = () => {
                       onClick={() => handleSeatClick(seat.id, seat.isBooked, seat.isBlocked, seat)}
                       onMouseEnter={() => handleSeatHover(seat)}
                       onMouseLeave={handleSeatLeave}
-                      disabled={!isAdmin && (seat.isBooked || seat.isBlocked || booking)}
+                      disabled={!isAdmin && (seat.isBooked || seat.isBlocked)}
                       className={getSeatStyle(seat.id, seat.isBooked, seat.isBlocked)}
                       title={
                         isAdmin 
@@ -516,7 +493,7 @@ const SeatSelection = () => {
                       onClick={() => handleSeatClick(seat.id, seat.isBooked, seat.isBlocked, seat)}
                       onMouseEnter={() => handleSeatHover(seat)}
                       onMouseLeave={handleSeatLeave}
-                      disabled={!isAdmin && (seat.isBooked || seat.isBlocked || booking)}
+                      disabled={!isAdmin && (seat.isBooked || seat.isBlocked)}
                       className={getSeatStyle(seat.id, seat.isBooked, seat.isBlocked)}
                       title={
                         isAdmin 
@@ -564,10 +541,9 @@ const SeatSelection = () => {
                 
                 <button
                   onClick={handleBooking}
-                  disabled={booking}
-                  className="bg-slate-800 text-white px-8 py-3 rounded-lg hover:bg-slate-900 transition-colors font-medium disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="bg-slate-800 text-white px-8 py-3 rounded-lg hover:bg-slate-900 transition-colors font-medium"
                 >
-                  {booking ? 'Booking...' : 'Book Seats'}
+                  Proceed to Payment
                 </button>
               </div>
             </div>
