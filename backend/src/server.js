@@ -88,6 +88,19 @@ app.use('/api/payments', paymentRoutes);
 // Admin routes (authentication and role validation handled in adminRoutes)
 app.use('/api/admin', adminRoutes);
 
+// Serve frontend in production
+if (process.env.NODE_ENV === 'production') {
+  const path = require('path');
+  
+  // Serve static files from the React app
+  app.use(express.static(path.join(__dirname, '../../frontend/dist')));
+  
+  // All other GET requests not handled before will return our React app
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../../frontend/dist', 'index.html'));
+  });
+}
+
 // Error handling middleware
 app.use(errorHandler);
 
@@ -95,6 +108,9 @@ server.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
   console.log(`Swagger documentation available at http://localhost:${PORT}/api-docs`);
   console.log(`Socket.io server ready for real-time connections`);
+  if (process.env.NODE_ENV === 'production') {
+    console.log(`Serving frontend from dist folder`);
+  }
 });
 
 module.exports = { app, server, io };
