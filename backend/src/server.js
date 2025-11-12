@@ -43,20 +43,32 @@ const PORT = process.env.PORT || 3000;
 
 // Middleware
 app.use(express.json());
-app.use(cors({
-  origin: function (origin, callback) {
-    // Allow requests with no origin (like mobile apps or curl requests)
-    if (!origin) return callback(null, true);
-    
-    if (allowedOrigins.indexOf(origin) !== -1) {
-      callback(null, true);
-    } else {
-      callback(new Error('Not allowed by CORS'));
-    }
-  },
-  credentials: true,
-  exposedHeaders: ['Content-Disposition', 'Content-Length']
-}));
+
+// CORS configuration based on environment
+if (process.env.NODE_ENV === 'production') {
+  // In production (single service), allow same-origin requests
+  app.use(cors({
+    origin: true, // Allow same origin
+    credentials: true,
+    exposedHeaders: ['Content-Disposition', 'Content-Length']
+  }));
+} else {
+  // In development, use strict origin checking
+  app.use(cors({
+    origin: function (origin, callback) {
+      // Allow requests with no origin (like mobile apps or curl requests)
+      if (!origin) return callback(null, true);
+      
+      if (allowedOrigins.indexOf(origin) !== -1) {
+        callback(null, true);
+      } else {
+        callback(new Error('Not allowed by CORS'));
+      }
+    },
+    credentials: true,
+    exposedHeaders: ['Content-Disposition', 'Content-Length']
+  }));
+}
 
 // Initialize Socket.io and managers
 socketManager.initialize(io);
