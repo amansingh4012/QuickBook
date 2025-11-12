@@ -1,0 +1,3789 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Admin User",
+      "email": "admin@quickbook.com",
+      "password": "$2b$10$DNhgdo5jsCDcm0gZDjLI8uo/UIkz0RnOh0iFCkShZEWLykoVORzQu",
+      "phone": "+919876543210",
+      "address": null,
+      "city": null,
+      "state": null,
+      "pincode": null,
+      "dateOfBirth": null,
+      "profilePicture": null,
+      "role": "ADMIN",
+      "createdAt": "2025-11-10T09:08:36.007Z",
+      "updatedAt": "2025-11-10T09:08:36.007Z"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "email": "jane@example.com",
+      "password": "$2b$10$DNhgdo5jsCDcm0gZDjLI8uo/UIkz0RnOh0iFCkShZEWLykoVORzQu",
+      "phone": "+919876543212",
+      "address": null,
+      "city": null,
+      "state": null,
+      "pincode": null,
+      "dateOfBirth": null,
+      "profilePicture": null,
+      "role": "USER",
+      "createdAt": "2025-11-10T09:08:36.015Z",
+      "updatedAt": "2025-11-10T09:08:36.015Z"
+    },
+    {
+      "id": 3,
+      "name": "John Doe",
+      "email": "john@example.com",
+      "password": "$2b$10$DNhgdo5jsCDcm0gZDjLI8uo/UIkz0RnOh0iFCkShZEWLykoVORzQu",
+      "phone": "+919876543211",
+      "address": null,
+      "city": null,
+      "state": null,
+      "pincode": null,
+      "dateOfBirth": null,
+      "profilePicture": null,
+      "role": "USER",
+      "createdAt": "2025-11-10T09:08:36.015Z",
+      "updatedAt": "2025-11-10T09:08:36.015Z"
+    },
+    {
+      "id": 4,
+      "name": "Mike Johnson",
+      "email": "mike@example.com",
+      "password": "$2b$10$DNhgdo5jsCDcm0gZDjLI8uo/UIkz0RnOh0iFCkShZEWLykoVORzQu",
+      "phone": "+919876543213",
+      "address": null,
+      "city": null,
+      "state": null,
+      "pincode": null,
+      "dateOfBirth": null,
+      "profilePicture": null,
+      "role": "USER",
+      "createdAt": "2025-11-10T09:08:36.016Z",
+      "updatedAt": "2025-11-10T09:08:36.016Z"
+    }
+  ],
+  "cinemas": [
+    {
+      "id": 1,
+      "name": "PVR Cinemas",
+      "city": "Mumbai",
+      "createdAt": "2025-11-10T09:08:35.840Z"
+    },
+    {
+      "id": 2,
+      "name": "INOX Megaplex",
+      "city": "Delhi",
+      "createdAt": "2025-11-10T09:08:35.852Z"
+    },
+    {
+      "id": 3,
+      "name": "Cinepolis",
+      "city": "Bangalore",
+      "createdAt": "2025-11-10T09:08:35.862Z"
+    },
+    {
+      "id": 4,
+      "name": "Carnival Cinemas",
+      "city": "Pune",
+      "createdAt": "2025-11-10T09:08:35.868Z"
+    }
+  ],
+  "screens": [
+    {
+      "id": 1,
+      "name": "Screen 1",
+      "cinemaId": 1
+    },
+    {
+      "id": 2,
+      "name": "Screen 2",
+      "cinemaId": 1
+    },
+    {
+      "id": 3,
+      "name": "Screen 3",
+      "cinemaId": 1
+    },
+    {
+      "id": 4,
+      "name": "IMAX Screen",
+      "cinemaId": 1
+    },
+    {
+      "id": 5,
+      "name": "Audi 1",
+      "cinemaId": 2
+    },
+    {
+      "id": 6,
+      "name": "Audi 2",
+      "cinemaId": 2
+    },
+    {
+      "id": 7,
+      "name": "Audi 3",
+      "cinemaId": 2
+    },
+    {
+      "id": 8,
+      "name": "Screen A",
+      "cinemaId": 3
+    },
+    {
+      "id": 9,
+      "name": "Screen B",
+      "cinemaId": 3
+    },
+    {
+      "id": 10,
+      "name": "4DX Screen",
+      "cinemaId": 3
+    },
+    {
+      "id": 11,
+      "name": "Hall 1",
+      "cinemaId": 4
+    },
+    {
+      "id": 12,
+      "name": "Hall 2",
+      "cinemaId": 4
+    }
+  ],
+  "movies": [
+    {
+      "id": 1,
+      "title": "The Dark Knight",
+      "description": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+      "durationMin": 152,
+      "posterUrl": "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+      "bannerUrl": "https://image.tmdb.org/t/p/original/hkBaDkMWbLaf8B1lsWsKX7Ew3Xq.jpg",
+      "trailerUrl": "https://www.youtube.com/watch?v=EXeTwQWrcwY",
+      "genre": "Action, Crime, Drama",
+      "language": "English",
+      "rating": "9.0",
+      "releaseDate": "2008-07-18T00:00:00.000Z",
+      "director": "Christopher Nolan",
+      "cast": "Christian Bale, Heath Ledger, Aaron Eckhart, Michael Caine",
+      "certificate": "U/A",
+      "createdAt": "2025-11-10T09:08:35.803Z",
+      "updatedAt": "2025-11-10T09:08:35.803Z"
+    },
+    {
+      "id": 2,
+      "title": "Inception",
+      "description": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.",
+      "durationMin": 148,
+      "posterUrl": "https://image.tmdb.org/t/p/w500/9gk7adHYeDvHkCSEqAvQNLV5Uge.jpg",
+      "bannerUrl": "https://image.tmdb.org/t/p/original/s3TBrRGB1iav7gFOCNx3H31MoES.jpg",
+      "trailerUrl": "https://www.youtube.com/watch?v=YoHD9XEInc0",
+      "genre": "Action, Sci-Fi, Thriller",
+      "language": "English",
+      "rating": "8.8",
+      "releaseDate": "2010-07-16T00:00:00.000Z",
+      "director": "Christopher Nolan",
+      "cast": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page, Tom Hardy",
+      "certificate": "U/A",
+      "createdAt": "2025-11-10T09:08:35.803Z",
+      "updatedAt": "2025-11-10T09:08:35.803Z"
+    },
+    {
+      "id": 3,
+      "title": "Parasite",
+      "description": "Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan.",
+      "durationMin": 132,
+      "posterUrl": "https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+      "bannerUrl": "https://image.tmdb.org/t/p/original/TU9NIjwzjoKPwQHoHshkFcQUCG.jpg",
+      "trailerUrl": "https://www.youtube.com/watch?v=5xH0HfJHsaY",
+      "genre": "Comedy, Drama, Thriller",
+      "language": "Korean",
+      "rating": "8.6",
+      "releaseDate": "2019-05-30T00:00:00.000Z",
+      "director": "Bong Joon Ho",
+      "cast": "Song Kang-ho, Lee Sun-kyun, Cho Yeo-jeong, Choi Woo-shik",
+      "certificate": "A",
+      "createdAt": "2025-11-10T09:08:35.803Z",
+      "updatedAt": "2025-11-10T09:08:35.803Z"
+    },
+    {
+      "id": 4,
+      "title": "Pulp Fiction",
+      "description": "The lives of two mob hitmen, a boxer, a gangster and his wife intertwine in four tales of violence and redemption.",
+      "durationMin": 154,
+      "posterUrl": "https://image.tmdb.org/t/p/w500/d5iIlFn5s0ImszYzBPb8JPIfbXD.jpg",
+      "bannerUrl": "https://image.tmdb.org/t/p/original/suaEOtk1N1sgg2MTM7oZd2cfVp3.jpg",
+      "trailerUrl": "https://www.youtube.com/watch?v=s7EdQ4FqbhY",
+      "genre": "Crime, Drama",
+      "language": "English",
+      "rating": "8.9",
+      "releaseDate": "1994-10-14T00:00:00.000Z",
+      "director": "Quentin Tarantino",
+      "cast": "John Travolta, Uma Thurman, Samuel L. Jackson, Bruce Willis",
+      "certificate": "A",
+      "createdAt": "2025-11-10T09:08:35.803Z",
+      "updatedAt": "2025-11-10T09:08:35.803Z"
+    },
+    {
+      "id": 5,
+      "title": "The Shawshank Redemption",
+      "description": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+      "durationMin": 142,
+      "posterUrl": "https://image.tmdb.org/t/p/w500/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg",
+      "bannerUrl": "https://image.tmdb.org/t/p/original/kXfqcdQKsToO0OUXHcrrNCHDBzO.jpg",
+      "trailerUrl": "https://www.youtube.com/watch?v=6hB3S9bIaco",
+      "genre": "Drama",
+      "language": "English",
+      "rating": "9.3",
+      "releaseDate": "1994-09-23T00:00:00.000Z",
+      "director": "Frank Darabont",
+      "cast": "Tim Robbins, Morgan Freeman, Bob Gunton, William Sadler",
+      "certificate": "A",
+      "createdAt": "2025-11-10T09:08:35.803Z",
+      "updatedAt": "2025-11-10T09:08:35.803Z"
+    },
+    {
+      "id": 6,
+      "title": "Dune: Part Two",
+      "description": "Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who destroyed his family.",
+      "durationMin": 166,
+      "posterUrl": "https://image.tmdb.org/t/p/w500/1pdfLvkbY9ohJlCjQH2CZjjYVvJ.jpg",
+      "bannerUrl": "https://image.tmdb.org/t/p/original/xOMo8BRK7PfcJv9JCnx7s5hj0PX.jpg",
+      "trailerUrl": "https://www.youtube.com/watch?v=Way9Dexny3w",
+      "genre": "Action, Adventure, Sci-Fi",
+      "language": "English",
+      "rating": "8.8",
+      "releaseDate": "2024-03-01T00:00:00.000Z",
+      "director": "Denis Villeneuve",
+      "cast": "Timothée Chalamet, Zendaya, Rebecca Ferguson, Austin Butler",
+      "certificate": "U/A",
+      "createdAt": "2025-11-10T09:08:35.803Z",
+      "updatedAt": "2025-11-10T09:08:35.803Z"
+    },
+    {
+      "id": 7,
+      "title": "Avengers: Endgame",
+      "description": "After the devastating events of Avengers: Infinity War, the universe is in ruins. With the help of remaining allies, the Avengers assemble once more.",
+      "durationMin": 181,
+      "posterUrl": "https://image.tmdb.org/t/p/w500/or06FN3Dka5tukK1e9sl16pB3iy.jpg",
+      "bannerUrl": "https://image.tmdb.org/t/p/original/7RyHsO4yDXtBv1zUU3mTpHeQ0d5.jpg",
+      "trailerUrl": "https://www.youtube.com/watch?v=TcMBFSGVi1c",
+      "genre": "Action, Adventure, Sci-Fi",
+      "language": "English",
+      "rating": "8.4",
+      "releaseDate": "2019-04-26T00:00:00.000Z",
+      "director": "Anthony Russo, Joe Russo",
+      "cast": "Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth, Scarlett Johansson",
+      "certificate": "U/A",
+      "createdAt": "2025-11-10T09:08:35.803Z",
+      "updatedAt": "2025-11-10T09:08:35.803Z"
+    },
+    {
+      "id": 8,
+      "title": "Interstellar",
+      "description": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
+      "durationMin": 169,
+      "posterUrl": "https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",
+      "bannerUrl": "https://image.tmdb.org/t/p/original/rAiYTfKGqDCRIIqo664sY9XZIvQ.jpg",
+      "trailerUrl": "https://www.youtube.com/watch?v=zSWdZVtXT7E",
+      "genre": "Adventure, Drama, Sci-Fi",
+      "language": "English",
+      "rating": "8.6",
+      "releaseDate": "2014-11-07T00:00:00.000Z",
+      "director": "Christopher Nolan",
+      "cast": "Matthew McConaughey, Anne Hathaway, Jessica Chastain, Michael Caine",
+      "certificate": "U/A",
+      "createdAt": "2025-11-10T09:08:35.803Z",
+      "updatedAt": "2025-11-10T09:08:35.803Z"
+    },
+    {
+      "id": 9,
+      "title": "Joker",
+      "description": "In Gotham City, mentally troubled comedian Arthur Fleck is disregarded and mistreated by society. He then embarks on a downward spiral of revolution and bloody crime.",
+      "durationMin": 122,
+      "posterUrl": "https://image.tmdb.org/t/p/w500/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg",
+      "bannerUrl": "https://image.tmdb.org/t/p/original/n6bUvigpRFqSwmPp1m2YADdbRBc.jpg",
+      "trailerUrl": "https://www.youtube.com/watch?v=zAGVQLHvwOY",
+      "genre": "Crime, Drama, Thriller",
+      "language": "English",
+      "rating": "8.4",
+      "releaseDate": "2019-10-04T00:00:00.000Z",
+      "director": "Todd Phillips",
+      "cast": "Joaquin Phoenix, Robert De Niro, Zazie Beetz, Frances Conroy",
+      "certificate": "A",
+      "createdAt": "2025-11-10T09:08:35.803Z",
+      "updatedAt": "2025-11-10T09:08:35.803Z"
+    },
+    {
+      "id": 10,
+      "title": "Oppenheimer",
+      "description": "The story of American scientist J. Robert Oppenheimer and his role in the development of the atomic bomb.",
+      "durationMin": 180,
+      "posterUrl": "https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
+      "bannerUrl": "https://image.tmdb.org/t/p/original/fm6KqXpk3M2HVveHwCrBSSBaO0V.jpg",
+      "trailerUrl": "https://www.youtube.com/watch?v=uYPbbksJxIg",
+      "genre": "Biography, Drama, History",
+      "language": "English",
+      "rating": "8.5",
+      "releaseDate": "2023-07-21T00:00:00.000Z",
+      "director": "Christopher Nolan",
+      "cast": "Cillian Murphy, Emily Blunt, Matt Damon, Robert Downey Jr.",
+      "certificate": "A",
+      "createdAt": "2025-11-10T09:08:35.803Z",
+      "updatedAt": "2025-11-10T09:08:35.803Z"
+    }
+  ],
+  "shows": [
+    {
+      "id": 1,
+      "movieId": 4,
+      "screenId": 1,
+      "startTime": "2025-11-10T11:15:00.000Z",
+      "price": 350
+    },
+    {
+      "id": 2,
+      "movieId": 10,
+      "screenId": 1,
+      "startTime": "2025-11-10T17:00:00.000Z",
+      "price": 400
+    },
+    {
+      "id": 3,
+      "movieId": 1,
+      "screenId": 2,
+      "startTime": "2025-11-10T11:15:00.000Z",
+      "price": 350
+    },
+    {
+      "id": 4,
+      "movieId": 4,
+      "screenId": 2,
+      "startTime": "2025-11-10T17:00:00.000Z",
+      "price": 250
+    },
+    {
+      "id": 5,
+      "movieId": 6,
+      "screenId": 3,
+      "startTime": "2025-11-10T14:45:00.000Z",
+      "price": 300
+    },
+    {
+      "id": 6,
+      "movieId": 9,
+      "screenId": 3,
+      "startTime": "2025-11-10T17:00:00.000Z",
+      "price": 150
+    },
+    {
+      "id": 7,
+      "movieId": 8,
+      "screenId": 3,
+      "startTime": "2025-11-10T11:15:00.000Z",
+      "price": 200
+    },
+    {
+      "id": 8,
+      "movieId": 3,
+      "screenId": 4,
+      "startTime": "2025-11-10T17:00:00.000Z",
+      "price": 200
+    },
+    {
+      "id": 9,
+      "movieId": 7,
+      "screenId": 4,
+      "startTime": "2025-11-10T14:45:00.000Z",
+      "price": 250
+    },
+    {
+      "id": 10,
+      "movieId": 7,
+      "screenId": 5,
+      "startTime": "2025-11-10T14:45:00.000Z",
+      "price": 350
+    },
+    {
+      "id": 11,
+      "movieId": 10,
+      "screenId": 5,
+      "startTime": "2025-11-10T17:00:00.000Z",
+      "price": 350
+    },
+    {
+      "id": 12,
+      "movieId": 10,
+      "screenId": 5,
+      "startTime": "2025-11-10T11:15:00.000Z",
+      "price": 250
+    },
+    {
+      "id": 13,
+      "movieId": 6,
+      "screenId": 6,
+      "startTime": "2025-11-10T14:45:00.000Z",
+      "price": 300
+    },
+    {
+      "id": 14,
+      "movieId": 3,
+      "screenId": 6,
+      "startTime": "2025-11-10T11:15:00.000Z",
+      "price": 400
+    },
+    {
+      "id": 15,
+      "movieId": 2,
+      "screenId": 7,
+      "startTime": "2025-11-10T11:15:00.000Z",
+      "price": 250
+    },
+    {
+      "id": 16,
+      "movieId": 3,
+      "screenId": 7,
+      "startTime": "2025-11-10T14:45:00.000Z",
+      "price": 200
+    },
+    {
+      "id": 17,
+      "movieId": 8,
+      "screenId": 8,
+      "startTime": "2025-11-10T14:45:00.000Z",
+      "price": 350
+    },
+    {
+      "id": 18,
+      "movieId": 10,
+      "screenId": 8,
+      "startTime": "2025-11-10T17:00:00.000Z",
+      "price": 150
+    },
+    {
+      "id": 19,
+      "movieId": 7,
+      "screenId": 9,
+      "startTime": "2025-11-10T17:00:00.000Z",
+      "price": 250
+    },
+    {
+      "id": 20,
+      "movieId": 1,
+      "screenId": 9,
+      "startTime": "2025-11-10T14:45:00.000Z",
+      "price": 250
+    },
+    {
+      "id": 21,
+      "movieId": 4,
+      "screenId": 10,
+      "startTime": "2025-11-10T17:00:00.000Z",
+      "price": 350
+    },
+    {
+      "id": 22,
+      "movieId": 7,
+      "screenId": 10,
+      "startTime": "2025-11-10T14:45:00.000Z",
+      "price": 300
+    },
+    {
+      "id": 23,
+      "movieId": 1,
+      "screenId": 11,
+      "startTime": "2025-11-10T17:00:00.000Z",
+      "price": 200
+    },
+    {
+      "id": 24,
+      "movieId": 3,
+      "screenId": 11,
+      "startTime": "2025-11-10T11:15:00.000Z",
+      "price": 200
+    },
+    {
+      "id": 25,
+      "movieId": 2,
+      "screenId": 12,
+      "startTime": "2025-11-10T17:00:00.000Z",
+      "price": 250
+    },
+    {
+      "id": 26,
+      "movieId": 7,
+      "screenId": 12,
+      "startTime": "2025-11-10T14:45:00.000Z",
+      "price": 200
+    },
+    {
+      "id": 27,
+      "movieId": 4,
+      "screenId": 1,
+      "startTime": "2025-11-11T14:45:00.000Z",
+      "price": 150
+    },
+    {
+      "id": 28,
+      "movieId": 6,
+      "screenId": 1,
+      "startTime": "2025-11-11T17:00:00.000Z",
+      "price": 300
+    },
+    {
+      "id": 29,
+      "movieId": 5,
+      "screenId": 1,
+      "startTime": "2025-11-11T08:00:00.000Z",
+      "price": 150
+    },
+    {
+      "id": 30,
+      "movieId": 8,
+      "screenId": 2,
+      "startTime": "2025-11-11T17:00:00.000Z",
+      "price": 350
+    },
+    {
+      "id": 31,
+      "movieId": 4,
+      "screenId": 2,
+      "startTime": "2025-11-11T14:45:00.000Z",
+      "price": 400
+    },
+    {
+      "id": 32,
+      "movieId": 6,
+      "screenId": 2,
+      "startTime": "2025-11-11T08:00:00.000Z",
+      "price": 350
+    },
+    {
+      "id": 33,
+      "movieId": 7,
+      "screenId": 2,
+      "startTime": "2025-11-11T11:15:00.000Z",
+      "price": 250
+    },
+    {
+      "id": 34,
+      "movieId": 6,
+      "screenId": 3,
+      "startTime": "2025-11-11T11:15:00.000Z",
+      "price": 200
+    },
+    {
+      "id": 35,
+      "movieId": 1,
+      "screenId": 3,
+      "startTime": "2025-11-11T17:00:00.000Z",
+      "price": 150
+    },
+    {
+      "id": 36,
+      "movieId": 1,
+      "screenId": 3,
+      "startTime": "2025-11-11T14:45:00.000Z",
+      "price": 200
+    },
+    {
+      "id": 37,
+      "movieId": 1,
+      "screenId": 4,
+      "startTime": "2025-11-11T08:00:00.000Z",
+      "price": 300
+    },
+    {
+      "id": 38,
+      "movieId": 6,
+      "screenId": 4,
+      "startTime": "2025-11-11T04:30:00.000Z",
+      "price": 400
+    },
+    {
+      "id": 39,
+      "movieId": 1,
+      "screenId": 4,
+      "startTime": "2025-11-11T17:00:00.000Z",
+      "price": 400
+    },
+    {
+      "id": 40,
+      "movieId": 2,
+      "screenId": 4,
+      "startTime": "2025-11-11T14:45:00.000Z",
+      "price": 400
+    },
+    {
+      "id": 41,
+      "movieId": 9,
+      "screenId": 5,
+      "startTime": "2025-11-11T08:00:00.000Z",
+      "price": 400
+    },
+    {
+      "id": 42,
+      "movieId": 9,
+      "screenId": 5,
+      "startTime": "2025-11-11T04:30:00.000Z",
+      "price": 150
+    },
+    {
+      "id": 43,
+      "movieId": 8,
+      "screenId": 5,
+      "startTime": "2025-11-11T17:00:00.000Z",
+      "price": 250
+    },
+    {
+      "id": 44,
+      "movieId": 3,
+      "screenId": 6,
+      "startTime": "2025-11-11T17:00:00.000Z",
+      "price": 200
+    },
+    {
+      "id": 45,
+      "movieId": 7,
+      "screenId": 6,
+      "startTime": "2025-11-11T11:15:00.000Z",
+      "price": 200
+    },
+    {
+      "id": 46,
+      "movieId": 6,
+      "screenId": 6,
+      "startTime": "2025-11-11T14:45:00.000Z",
+      "price": 250
+    },
+    {
+      "id": 47,
+      "movieId": 7,
+      "screenId": 6,
+      "startTime": "2025-11-11T04:30:00.000Z",
+      "price": 300
+    },
+    {
+      "id": 48,
+      "movieId": 6,
+      "screenId": 7,
+      "startTime": "2025-11-11T14:45:00.000Z",
+      "price": 250
+    },
+    {
+      "id": 49,
+      "movieId": 10,
+      "screenId": 7,
+      "startTime": "2025-11-11T11:15:00.000Z",
+      "price": 200
+    },
+    {
+      "id": 50,
+      "movieId": 9,
+      "screenId": 7,
+      "startTime": "2025-11-11T08:00:00.000Z",
+      "price": 250
+    },
+    {
+      "id": 51,
+      "movieId": 5,
+      "screenId": 7,
+      "startTime": "2025-11-11T17:00:00.000Z",
+      "price": 350
+    },
+    {
+      "id": 52,
+      "movieId": 8,
+      "screenId": 8,
+      "startTime": "2025-11-11T14:45:00.000Z",
+      "price": 150
+    },
+    {
+      "id": 53,
+      "movieId": 5,
+      "screenId": 8,
+      "startTime": "2025-11-11T04:30:00.000Z",
+      "price": 350
+    },
+    {
+      "id": 54,
+      "movieId": 9,
+      "screenId": 8,
+      "startTime": "2025-11-11T08:00:00.000Z",
+      "price": 300
+    },
+    {
+      "id": 55,
+      "movieId": 6,
+      "screenId": 8,
+      "startTime": "2025-11-11T11:15:00.000Z",
+      "price": 300
+    },
+    {
+      "id": 56,
+      "movieId": 4,
+      "screenId": 9,
+      "startTime": "2025-11-11T14:45:00.000Z",
+      "price": 300
+    },
+    {
+      "id": 57,
+      "movieId": 5,
+      "screenId": 9,
+      "startTime": "2025-11-11T17:00:00.000Z",
+      "price": 250
+    },
+    {
+      "id": 58,
+      "movieId": 10,
+      "screenId": 9,
+      "startTime": "2025-11-11T11:15:00.000Z",
+      "price": 400
+    },
+    {
+      "id": 59,
+      "movieId": 8,
+      "screenId": 9,
+      "startTime": "2025-11-11T04:30:00.000Z",
+      "price": 400
+    },
+    {
+      "id": 60,
+      "movieId": 6,
+      "screenId": 10,
+      "startTime": "2025-11-11T04:30:00.000Z",
+      "price": 200
+    },
+    {
+      "id": 61,
+      "movieId": 4,
+      "screenId": 10,
+      "startTime": "2025-11-11T08:00:00.000Z",
+      "price": 200
+    },
+    {
+      "id": 62,
+      "movieId": 4,
+      "screenId": 10,
+      "startTime": "2025-11-11T11:15:00.000Z",
+      "price": 300
+    },
+    {
+      "id": 63,
+      "movieId": 2,
+      "screenId": 11,
+      "startTime": "2025-11-11T04:30:00.000Z",
+      "price": 350
+    },
+    {
+      "id": 64,
+      "movieId": 3,
+      "screenId": 11,
+      "startTime": "2025-11-11T17:00:00.000Z",
+      "price": 400
+    },
+    {
+      "id": 65,
+      "movieId": 5,
+      "screenId": 11,
+      "startTime": "2025-11-11T14:45:00.000Z",
+      "price": 200
+    },
+    {
+      "id": 66,
+      "movieId": 3,
+      "screenId": 12,
+      "startTime": "2025-11-11T14:45:00.000Z",
+      "price": 200
+    },
+    {
+      "id": 67,
+      "movieId": 6,
+      "screenId": 12,
+      "startTime": "2025-11-11T17:00:00.000Z",
+      "price": 400
+    },
+    {
+      "id": 68,
+      "movieId": 8,
+      "screenId": 12,
+      "startTime": "2025-11-11T04:30:00.000Z",
+      "price": 150
+    },
+    {
+      "id": 69,
+      "movieId": 3,
+      "screenId": 1,
+      "startTime": "2025-11-12T14:45:00.000Z",
+      "price": 200
+    },
+    {
+      "id": 70,
+      "movieId": 5,
+      "screenId": 1,
+      "startTime": "2025-11-12T08:00:00.000Z",
+      "price": 400
+    },
+    {
+      "id": 71,
+      "movieId": 10,
+      "screenId": 1,
+      "startTime": "2025-11-12T17:00:00.000Z",
+      "price": 350
+    },
+    {
+      "id": 72,
+      "movieId": 9,
+      "screenId": 2,
+      "startTime": "2025-11-12T04:30:00.000Z",
+      "price": 400
+    },
+    {
+      "id": 73,
+      "movieId": 4,
+      "screenId": 2,
+      "startTime": "2025-11-12T11:15:00.000Z",
+      "price": 250
+    },
+    {
+      "id": 74,
+      "movieId": 10,
+      "screenId": 2,
+      "startTime": "2025-11-12T17:00:00.000Z",
+      "price": 200
+    },
+    {
+      "id": 75,
+      "movieId": 6,
+      "screenId": 2,
+      "startTime": "2025-11-12T08:00:00.000Z",
+      "price": 200
+    },
+    {
+      "id": 76,
+      "movieId": 5,
+      "screenId": 3,
+      "startTime": "2025-11-12T04:30:00.000Z",
+      "price": 350
+    },
+    {
+      "id": 77,
+      "movieId": 9,
+      "screenId": 3,
+      "startTime": "2025-11-12T08:00:00.000Z",
+      "price": 150
+    },
+    {
+      "id": 78,
+      "movieId": 4,
+      "screenId": 3,
+      "startTime": "2025-11-12T14:45:00.000Z",
+      "price": 350
+    },
+    {
+      "id": 79,
+      "movieId": 7,
+      "screenId": 3,
+      "startTime": "2025-11-12T11:15:00.000Z",
+      "price": 350
+    },
+    {
+      "id": 80,
+      "movieId": 8,
+      "screenId": 4,
+      "startTime": "2025-11-12T14:45:00.000Z",
+      "price": 300
+    },
+    {
+      "id": 81,
+      "movieId": 3,
+      "screenId": 4,
+      "startTime": "2025-11-12T17:00:00.000Z",
+      "price": 300
+    },
+    {
+      "id": 82,
+      "movieId": 1,
+      "screenId": 4,
+      "startTime": "2025-11-12T08:00:00.000Z",
+      "price": 300
+    },
+    {
+      "id": 83,
+      "movieId": 1,
+      "screenId": 5,
+      "startTime": "2025-11-12T17:00:00.000Z",
+      "price": 400
+    },
+    {
+      "id": 84,
+      "movieId": 6,
+      "screenId": 5,
+      "startTime": "2025-11-12T11:15:00.000Z",
+      "price": 250
+    },
+    {
+      "id": 85,
+      "movieId": 6,
+      "screenId": 5,
+      "startTime": "2025-11-12T08:00:00.000Z",
+      "price": 300
+    },
+    {
+      "id": 86,
+      "movieId": 5,
+      "screenId": 5,
+      "startTime": "2025-11-12T04:30:00.000Z",
+      "price": 200
+    },
+    {
+      "id": 87,
+      "movieId": 3,
+      "screenId": 6,
+      "startTime": "2025-11-12T04:30:00.000Z",
+      "price": 350
+    },
+    {
+      "id": 88,
+      "movieId": 3,
+      "screenId": 6,
+      "startTime": "2025-11-12T08:00:00.000Z",
+      "price": 150
+    },
+    {
+      "id": 89,
+      "movieId": 1,
+      "screenId": 6,
+      "startTime": "2025-11-12T11:15:00.000Z",
+      "price": 150
+    },
+    {
+      "id": 90,
+      "movieId": 9,
+      "screenId": 6,
+      "startTime": "2025-11-12T17:00:00.000Z",
+      "price": 400
+    },
+    {
+      "id": 91,
+      "movieId": 7,
+      "screenId": 7,
+      "startTime": "2025-11-12T14:45:00.000Z",
+      "price": 200
+    },
+    {
+      "id": 92,
+      "movieId": 1,
+      "screenId": 7,
+      "startTime": "2025-11-12T17:00:00.000Z",
+      "price": 350
+    },
+    {
+      "id": 93,
+      "movieId": 8,
+      "screenId": 7,
+      "startTime": "2025-11-12T08:00:00.000Z",
+      "price": 300
+    },
+    {
+      "id": 94,
+      "movieId": 5,
+      "screenId": 8,
+      "startTime": "2025-11-12T04:30:00.000Z",
+      "price": 350
+    },
+    {
+      "id": 95,
+      "movieId": 7,
+      "screenId": 8,
+      "startTime": "2025-11-12T11:15:00.000Z",
+      "price": 300
+    },
+    {
+      "id": 96,
+      "movieId": 9,
+      "screenId": 8,
+      "startTime": "2025-11-12T14:45:00.000Z",
+      "price": 400
+    },
+    {
+      "id": 97,
+      "movieId": 1,
+      "screenId": 9,
+      "startTime": "2025-11-12T08:00:00.000Z",
+      "price": 150
+    },
+    {
+      "id": 98,
+      "movieId": 4,
+      "screenId": 9,
+      "startTime": "2025-11-12T17:00:00.000Z",
+      "price": 150
+    },
+    {
+      "id": 99,
+      "movieId": 7,
+      "screenId": 9,
+      "startTime": "2025-11-12T14:45:00.000Z",
+      "price": 350
+    },
+    {
+      "id": 100,
+      "movieId": 4,
+      "screenId": 9,
+      "startTime": "2025-11-12T11:15:00.000Z",
+      "price": 350
+    },
+    {
+      "id": 101,
+      "movieId": 5,
+      "screenId": 10,
+      "startTime": "2025-11-12T08:00:00.000Z",
+      "price": 350
+    },
+    {
+      "id": 102,
+      "movieId": 8,
+      "screenId": 10,
+      "startTime": "2025-11-12T17:00:00.000Z",
+      "price": 150
+    },
+    {
+      "id": 103,
+      "movieId": 4,
+      "screenId": 10,
+      "startTime": "2025-11-12T04:30:00.000Z",
+      "price": 250
+    },
+    {
+      "id": 104,
+      "movieId": 4,
+      "screenId": 10,
+      "startTime": "2025-11-12T11:15:00.000Z",
+      "price": 150
+    },
+    {
+      "id": 105,
+      "movieId": 7,
+      "screenId": 11,
+      "startTime": "2025-11-12T08:00:00.000Z",
+      "price": 200
+    },
+    {
+      "id": 106,
+      "movieId": 6,
+      "screenId": 11,
+      "startTime": "2025-11-12T17:00:00.000Z",
+      "price": 150
+    },
+    {
+      "id": 107,
+      "movieId": 1,
+      "screenId": 11,
+      "startTime": "2025-11-12T04:30:00.000Z",
+      "price": 150
+    },
+    {
+      "id": 108,
+      "movieId": 6,
+      "screenId": 11,
+      "startTime": "2025-11-12T11:15:00.000Z",
+      "price": 400
+    },
+    {
+      "id": 109,
+      "movieId": 10,
+      "screenId": 12,
+      "startTime": "2025-11-12T11:15:00.000Z",
+      "price": 400
+    },
+    {
+      "id": 110,
+      "movieId": 6,
+      "screenId": 12,
+      "startTime": "2025-11-12T04:30:00.000Z",
+      "price": 250
+    },
+    {
+      "id": 111,
+      "movieId": 10,
+      "screenId": 12,
+      "startTime": "2025-11-12T14:45:00.000Z",
+      "price": 350
+    },
+    {
+      "id": 112,
+      "movieId": 6,
+      "screenId": 1,
+      "startTime": "2025-11-13T14:45:00.000Z",
+      "price": 150
+    },
+    {
+      "id": 113,
+      "movieId": 5,
+      "screenId": 1,
+      "startTime": "2025-11-13T04:30:00.000Z",
+      "price": 250
+    },
+    {
+      "id": 114,
+      "movieId": 7,
+      "screenId": 1,
+      "startTime": "2025-11-13T17:00:00.000Z",
+      "price": 350
+    },
+    {
+      "id": 115,
+      "movieId": 8,
+      "screenId": 2,
+      "startTime": "2025-11-13T08:00:00.000Z",
+      "price": 250
+    },
+    {
+      "id": 116,
+      "movieId": 6,
+      "screenId": 2,
+      "startTime": "2025-11-13T17:00:00.000Z",
+      "price": 150
+    },
+    {
+      "id": 117,
+      "movieId": 3,
+      "screenId": 2,
+      "startTime": "2025-11-13T04:30:00.000Z",
+      "price": 400
+    },
+    {
+      "id": 118,
+      "movieId": 6,
+      "screenId": 3,
+      "startTime": "2025-11-13T14:45:00.000Z",
+      "price": 300
+    },
+    {
+      "id": 119,
+      "movieId": 8,
+      "screenId": 3,
+      "startTime": "2025-11-13T11:15:00.000Z",
+      "price": 300
+    },
+    {
+      "id": 120,
+      "movieId": 7,
+      "screenId": 3,
+      "startTime": "2025-11-13T04:30:00.000Z",
+      "price": 350
+    },
+    {
+      "id": 121,
+      "movieId": 8,
+      "screenId": 3,
+      "startTime": "2025-11-13T17:00:00.000Z",
+      "price": 200
+    },
+    {
+      "id": 122,
+      "movieId": 6,
+      "screenId": 4,
+      "startTime": "2025-11-13T04:30:00.000Z",
+      "price": 250
+    },
+    {
+      "id": 123,
+      "movieId": 4,
+      "screenId": 4,
+      "startTime": "2025-11-13T11:15:00.000Z",
+      "price": 150
+    },
+    {
+      "id": 124,
+      "movieId": 5,
+      "screenId": 4,
+      "startTime": "2025-11-13T17:00:00.000Z",
+      "price": 300
+    },
+    {
+      "id": 125,
+      "movieId": 8,
+      "screenId": 4,
+      "startTime": "2025-11-13T14:45:00.000Z",
+      "price": 300
+    },
+    {
+      "id": 126,
+      "movieId": 1,
+      "screenId": 5,
+      "startTime": "2025-11-13T04:30:00.000Z",
+      "price": 150
+    },
+    {
+      "id": 127,
+      "movieId": 8,
+      "screenId": 5,
+      "startTime": "2025-11-13T08:00:00.000Z",
+      "price": 300
+    },
+    {
+      "id": 128,
+      "movieId": 9,
+      "screenId": 5,
+      "startTime": "2025-11-13T11:15:00.000Z",
+      "price": 200
+    },
+    {
+      "id": 129,
+      "movieId": 7,
+      "screenId": 5,
+      "startTime": "2025-11-13T17:00:00.000Z",
+      "price": 250
+    },
+    {
+      "id": 130,
+      "movieId": 4,
+      "screenId": 6,
+      "startTime": "2025-11-13T17:00:00.000Z",
+      "price": 350
+    },
+    {
+      "id": 131,
+      "movieId": 2,
+      "screenId": 6,
+      "startTime": "2025-11-13T04:30:00.000Z",
+      "price": 150
+    },
+    {
+      "id": 132,
+      "movieId": 10,
+      "screenId": 6,
+      "startTime": "2025-11-13T08:00:00.000Z",
+      "price": 350
+    },
+    {
+      "id": 133,
+      "movieId": 4,
+      "screenId": 6,
+      "startTime": "2025-11-13T11:15:00.000Z",
+      "price": 250
+    },
+    {
+      "id": 134,
+      "movieId": 2,
+      "screenId": 7,
+      "startTime": "2025-11-13T14:45:00.000Z",
+      "price": 300
+    },
+    {
+      "id": 135,
+      "movieId": 10,
+      "screenId": 7,
+      "startTime": "2025-11-13T11:15:00.000Z",
+      "price": 250
+    },
+    {
+      "id": 136,
+      "movieId": 8,
+      "screenId": 7,
+      "startTime": "2025-11-13T08:00:00.000Z",
+      "price": 350
+    },
+    {
+      "id": 137,
+      "movieId": 1,
+      "screenId": 7,
+      "startTime": "2025-11-13T04:30:00.000Z",
+      "price": 150
+    },
+    {
+      "id": 138,
+      "movieId": 1,
+      "screenId": 8,
+      "startTime": "2025-11-13T14:45:00.000Z",
+      "price": 150
+    },
+    {
+      "id": 139,
+      "movieId": 1,
+      "screenId": 8,
+      "startTime": "2025-11-13T11:15:00.000Z",
+      "price": 200
+    },
+    {
+      "id": 140,
+      "movieId": 1,
+      "screenId": 8,
+      "startTime": "2025-11-13T08:00:00.000Z",
+      "price": 200
+    },
+    {
+      "id": 141,
+      "movieId": 9,
+      "screenId": 9,
+      "startTime": "2025-11-13T11:15:00.000Z",
+      "price": 250
+    },
+    {
+      "id": 142,
+      "movieId": 3,
+      "screenId": 9,
+      "startTime": "2025-11-13T08:00:00.000Z",
+      "price": 250
+    },
+    {
+      "id": 143,
+      "movieId": 3,
+      "screenId": 9,
+      "startTime": "2025-11-13T14:45:00.000Z",
+      "price": 400
+    },
+    {
+      "id": 144,
+      "movieId": 3,
+      "screenId": 10,
+      "startTime": "2025-11-13T04:30:00.000Z",
+      "price": 150
+    },
+    {
+      "id": 145,
+      "movieId": 7,
+      "screenId": 10,
+      "startTime": "2025-11-13T11:15:00.000Z",
+      "price": 200
+    },
+    {
+      "id": 146,
+      "movieId": 2,
+      "screenId": 10,
+      "startTime": "2025-11-13T08:00:00.000Z",
+      "price": 350
+    },
+    {
+      "id": 147,
+      "movieId": 1,
+      "screenId": 11,
+      "startTime": "2025-11-13T14:45:00.000Z",
+      "price": 200
+    },
+    {
+      "id": 148,
+      "movieId": 5,
+      "screenId": 11,
+      "startTime": "2025-11-13T04:30:00.000Z",
+      "price": 150
+    },
+    {
+      "id": 149,
+      "movieId": 6,
+      "screenId": 11,
+      "startTime": "2025-11-13T08:00:00.000Z",
+      "price": 400
+    },
+    {
+      "id": 150,
+      "movieId": 6,
+      "screenId": 12,
+      "startTime": "2025-11-13T11:15:00.000Z",
+      "price": 200
+    },
+    {
+      "id": 151,
+      "movieId": 4,
+      "screenId": 12,
+      "startTime": "2025-11-13T04:30:00.000Z",
+      "price": 200
+    },
+    {
+      "id": 152,
+      "movieId": 10,
+      "screenId": 12,
+      "startTime": "2025-11-13T08:00:00.000Z",
+      "price": 250
+    },
+    {
+      "id": 153,
+      "movieId": 5,
+      "screenId": 1,
+      "startTime": "2025-11-14T11:15:00.000Z",
+      "price": 300
+    },
+    {
+      "id": 154,
+      "movieId": 1,
+      "screenId": 1,
+      "startTime": "2025-11-14T14:45:00.000Z",
+      "price": 150
+    },
+    {
+      "id": 155,
+      "movieId": 1,
+      "screenId": 1,
+      "startTime": "2025-11-14T04:30:00.000Z",
+      "price": 400
+    },
+    {
+      "id": 156,
+      "movieId": 9,
+      "screenId": 1,
+      "startTime": "2025-11-14T08:00:00.000Z",
+      "price": 150
+    },
+    {
+      "id": 157,
+      "movieId": 1,
+      "screenId": 2,
+      "startTime": "2025-11-14T11:15:00.000Z",
+      "price": 250
+    },
+    {
+      "id": 158,
+      "movieId": 8,
+      "screenId": 2,
+      "startTime": "2025-11-14T17:00:00.000Z",
+      "price": 300
+    },
+    {
+      "id": 159,
+      "movieId": 1,
+      "screenId": 2,
+      "startTime": "2025-11-14T14:45:00.000Z",
+      "price": 250
+    },
+    {
+      "id": 160,
+      "movieId": 4,
+      "screenId": 2,
+      "startTime": "2025-11-14T04:30:00.000Z",
+      "price": 150
+    },
+    {
+      "id": 161,
+      "movieId": 1,
+      "screenId": 3,
+      "startTime": "2025-11-14T08:00:00.000Z",
+      "price": 200
+    },
+    {
+      "id": 162,
+      "movieId": 8,
+      "screenId": 3,
+      "startTime": "2025-11-14T04:30:00.000Z",
+      "price": 150
+    },
+    {
+      "id": 163,
+      "movieId": 8,
+      "screenId": 3,
+      "startTime": "2025-11-14T14:45:00.000Z",
+      "price": 350
+    },
+    {
+      "id": 164,
+      "movieId": 7,
+      "screenId": 3,
+      "startTime": "2025-11-14T17:00:00.000Z",
+      "price": 250
+    },
+    {
+      "id": 165,
+      "movieId": 4,
+      "screenId": 4,
+      "startTime": "2025-11-14T11:15:00.000Z",
+      "price": 150
+    },
+    {
+      "id": 166,
+      "movieId": 5,
+      "screenId": 4,
+      "startTime": "2025-11-14T17:00:00.000Z",
+      "price": 150
+    },
+    {
+      "id": 167,
+      "movieId": 8,
+      "screenId": 4,
+      "startTime": "2025-11-14T14:45:00.000Z",
+      "price": 400
+    },
+    {
+      "id": 168,
+      "movieId": 5,
+      "screenId": 5,
+      "startTime": "2025-11-14T14:45:00.000Z",
+      "price": 150
+    },
+    {
+      "id": 169,
+      "movieId": 3,
+      "screenId": 5,
+      "startTime": "2025-11-14T17:00:00.000Z",
+      "price": 350
+    },
+    {
+      "id": 170,
+      "movieId": 9,
+      "screenId": 5,
+      "startTime": "2025-11-14T08:00:00.000Z",
+      "price": 300
+    },
+    {
+      "id": 171,
+      "movieId": 8,
+      "screenId": 5,
+      "startTime": "2025-11-14T04:30:00.000Z",
+      "price": 400
+    },
+    {
+      "id": 172,
+      "movieId": 4,
+      "screenId": 6,
+      "startTime": "2025-11-14T04:30:00.000Z",
+      "price": 350
+    },
+    {
+      "id": 173,
+      "movieId": 10,
+      "screenId": 6,
+      "startTime": "2025-11-14T14:45:00.000Z",
+      "price": 200
+    },
+    {
+      "id": 174,
+      "movieId": 2,
+      "screenId": 6,
+      "startTime": "2025-11-14T17:00:00.000Z",
+      "price": 350
+    },
+    {
+      "id": 175,
+      "movieId": 2,
+      "screenId": 7,
+      "startTime": "2025-11-14T08:00:00.000Z",
+      "price": 350
+    },
+    {
+      "id": 176,
+      "movieId": 2,
+      "screenId": 7,
+      "startTime": "2025-11-14T17:00:00.000Z",
+      "price": 400
+    },
+    {
+      "id": 177,
+      "movieId": 4,
+      "screenId": 7,
+      "startTime": "2025-11-14T11:15:00.000Z",
+      "price": 200
+    },
+    {
+      "id": 178,
+      "movieId": 1,
+      "screenId": 7,
+      "startTime": "2025-11-14T14:45:00.000Z",
+      "price": 350
+    },
+    {
+      "id": 179,
+      "movieId": 3,
+      "screenId": 8,
+      "startTime": "2025-11-14T08:00:00.000Z",
+      "price": 200
+    },
+    {
+      "id": 180,
+      "movieId": 2,
+      "screenId": 8,
+      "startTime": "2025-11-14T17:00:00.000Z",
+      "price": 350
+    },
+    {
+      "id": 181,
+      "movieId": 7,
+      "screenId": 8,
+      "startTime": "2025-11-14T11:15:00.000Z",
+      "price": 150
+    },
+    {
+      "id": 182,
+      "movieId": 5,
+      "screenId": 9,
+      "startTime": "2025-11-14T11:15:00.000Z",
+      "price": 350
+    },
+    {
+      "id": 183,
+      "movieId": 1,
+      "screenId": 9,
+      "startTime": "2025-11-14T17:00:00.000Z",
+      "price": 400
+    },
+    {
+      "id": 184,
+      "movieId": 10,
+      "screenId": 9,
+      "startTime": "2025-11-14T08:00:00.000Z",
+      "price": 150
+    },
+    {
+      "id": 185,
+      "movieId": 5,
+      "screenId": 10,
+      "startTime": "2025-11-14T11:15:00.000Z",
+      "price": 200
+    },
+    {
+      "id": 186,
+      "movieId": 7,
+      "screenId": 10,
+      "startTime": "2025-11-14T04:30:00.000Z",
+      "price": 150
+    },
+    {
+      "id": 187,
+      "movieId": 4,
+      "screenId": 10,
+      "startTime": "2025-11-14T17:00:00.000Z",
+      "price": 150
+    },
+    {
+      "id": 188,
+      "movieId": 6,
+      "screenId": 11,
+      "startTime": "2025-11-14T17:00:00.000Z",
+      "price": 350
+    },
+    {
+      "id": 189,
+      "movieId": 2,
+      "screenId": 11,
+      "startTime": "2025-11-14T04:30:00.000Z",
+      "price": 400
+    },
+    {
+      "id": 190,
+      "movieId": 5,
+      "screenId": 11,
+      "startTime": "2025-11-14T11:15:00.000Z",
+      "price": 400
+    },
+    {
+      "id": 191,
+      "movieId": 7,
+      "screenId": 12,
+      "startTime": "2025-11-14T11:15:00.000Z",
+      "price": 350
+    },
+    {
+      "id": 192,
+      "movieId": 6,
+      "screenId": 12,
+      "startTime": "2025-11-14T08:00:00.000Z",
+      "price": 350
+    },
+    {
+      "id": 193,
+      "movieId": 3,
+      "screenId": 12,
+      "startTime": "2025-11-14T14:45:00.000Z",
+      "price": 300
+    },
+    {
+      "id": 194,
+      "movieId": 10,
+      "screenId": 12,
+      "startTime": "2025-11-14T04:30:00.000Z",
+      "price": 350
+    },
+    {
+      "id": 195,
+      "movieId": 8,
+      "screenId": 1,
+      "startTime": "2025-11-15T17:00:00.000Z",
+      "price": 400
+    },
+    {
+      "id": 196,
+      "movieId": 10,
+      "screenId": 1,
+      "startTime": "2025-11-15T04:30:00.000Z",
+      "price": 200
+    },
+    {
+      "id": 197,
+      "movieId": 2,
+      "screenId": 1,
+      "startTime": "2025-11-15T14:45:00.000Z",
+      "price": 150
+    },
+    {
+      "id": 198,
+      "movieId": 9,
+      "screenId": 1,
+      "startTime": "2025-11-15T08:00:00.000Z",
+      "price": 400
+    },
+    {
+      "id": 199,
+      "movieId": 3,
+      "screenId": 2,
+      "startTime": "2025-11-15T17:00:00.000Z",
+      "price": 150
+    },
+    {
+      "id": 200,
+      "movieId": 9,
+      "screenId": 2,
+      "startTime": "2025-11-15T04:30:00.000Z",
+      "price": 350
+    },
+    {
+      "id": 201,
+      "movieId": 2,
+      "screenId": 2,
+      "startTime": "2025-11-15T08:00:00.000Z",
+      "price": 150
+    },
+    {
+      "id": 202,
+      "movieId": 9,
+      "screenId": 2,
+      "startTime": "2025-11-15T14:45:00.000Z",
+      "price": 150
+    },
+    {
+      "id": 203,
+      "movieId": 2,
+      "screenId": 3,
+      "startTime": "2025-11-15T04:30:00.000Z",
+      "price": 400
+    },
+    {
+      "id": 204,
+      "movieId": 2,
+      "screenId": 3,
+      "startTime": "2025-11-15T14:45:00.000Z",
+      "price": 250
+    },
+    {
+      "id": 205,
+      "movieId": 5,
+      "screenId": 3,
+      "startTime": "2025-11-15T11:15:00.000Z",
+      "price": 400
+    },
+    {
+      "id": 206,
+      "movieId": 1,
+      "screenId": 4,
+      "startTime": "2025-11-15T11:15:00.000Z",
+      "price": 150
+    },
+    {
+      "id": 207,
+      "movieId": 4,
+      "screenId": 4,
+      "startTime": "2025-11-15T14:45:00.000Z",
+      "price": 250
+    },
+    {
+      "id": 208,
+      "movieId": 5,
+      "screenId": 4,
+      "startTime": "2025-11-15T17:00:00.000Z",
+      "price": 400
+    },
+    {
+      "id": 209,
+      "movieId": 9,
+      "screenId": 4,
+      "startTime": "2025-11-15T04:30:00.000Z",
+      "price": 350
+    },
+    {
+      "id": 210,
+      "movieId": 8,
+      "screenId": 5,
+      "startTime": "2025-11-15T17:00:00.000Z",
+      "price": 300
+    },
+    {
+      "id": 211,
+      "movieId": 4,
+      "screenId": 5,
+      "startTime": "2025-11-15T14:45:00.000Z",
+      "price": 400
+    },
+    {
+      "id": 212,
+      "movieId": 6,
+      "screenId": 5,
+      "startTime": "2025-11-15T04:30:00.000Z",
+      "price": 400
+    },
+    {
+      "id": 213,
+      "movieId": 1,
+      "screenId": 6,
+      "startTime": "2025-11-15T08:00:00.000Z",
+      "price": 400
+    },
+    {
+      "id": 214,
+      "movieId": 2,
+      "screenId": 6,
+      "startTime": "2025-11-15T14:45:00.000Z",
+      "price": 150
+    },
+    {
+      "id": 215,
+      "movieId": 8,
+      "screenId": 6,
+      "startTime": "2025-11-15T17:00:00.000Z",
+      "price": 350
+    },
+    {
+      "id": 216,
+      "movieId": 2,
+      "screenId": 6,
+      "startTime": "2025-11-15T11:15:00.000Z",
+      "price": 200
+    },
+    {
+      "id": 217,
+      "movieId": 9,
+      "screenId": 7,
+      "startTime": "2025-11-15T17:00:00.000Z",
+      "price": 200
+    },
+    {
+      "id": 218,
+      "movieId": 6,
+      "screenId": 7,
+      "startTime": "2025-11-15T08:00:00.000Z",
+      "price": 250
+    },
+    {
+      "id": 219,
+      "movieId": 3,
+      "screenId": 7,
+      "startTime": "2025-11-15T04:30:00.000Z",
+      "price": 400
+    },
+    {
+      "id": 220,
+      "movieId": 2,
+      "screenId": 8,
+      "startTime": "2025-11-15T17:00:00.000Z",
+      "price": 200
+    },
+    {
+      "id": 221,
+      "movieId": 8,
+      "screenId": 8,
+      "startTime": "2025-11-15T04:30:00.000Z",
+      "price": 150
+    },
+    {
+      "id": 222,
+      "movieId": 5,
+      "screenId": 8,
+      "startTime": "2025-11-15T08:00:00.000Z",
+      "price": 200
+    },
+    {
+      "id": 223,
+      "movieId": 2,
+      "screenId": 8,
+      "startTime": "2025-11-15T11:15:00.000Z",
+      "price": 400
+    },
+    {
+      "id": 224,
+      "movieId": 8,
+      "screenId": 9,
+      "startTime": "2025-11-15T14:45:00.000Z",
+      "price": 400
+    },
+    {
+      "id": 225,
+      "movieId": 8,
+      "screenId": 9,
+      "startTime": "2025-11-15T08:00:00.000Z",
+      "price": 300
+    },
+    {
+      "id": 226,
+      "movieId": 2,
+      "screenId": 9,
+      "startTime": "2025-11-15T04:30:00.000Z",
+      "price": 150
+    },
+    {
+      "id": 227,
+      "movieId": 10,
+      "screenId": 9,
+      "startTime": "2025-11-15T11:15:00.000Z",
+      "price": 200
+    },
+    {
+      "id": 228,
+      "movieId": 2,
+      "screenId": 10,
+      "startTime": "2025-11-15T11:15:00.000Z",
+      "price": 300
+    },
+    {
+      "id": 229,
+      "movieId": 1,
+      "screenId": 10,
+      "startTime": "2025-11-15T04:30:00.000Z",
+      "price": 300
+    },
+    {
+      "id": 230,
+      "movieId": 5,
+      "screenId": 10,
+      "startTime": "2025-11-15T08:00:00.000Z",
+      "price": 150
+    },
+    {
+      "id": 231,
+      "movieId": 5,
+      "screenId": 10,
+      "startTime": "2025-11-15T17:00:00.000Z",
+      "price": 200
+    },
+    {
+      "id": 232,
+      "movieId": 2,
+      "screenId": 11,
+      "startTime": "2025-11-15T08:00:00.000Z",
+      "price": 250
+    },
+    {
+      "id": 233,
+      "movieId": 5,
+      "screenId": 11,
+      "startTime": "2025-11-15T04:30:00.000Z",
+      "price": 400
+    },
+    {
+      "id": 234,
+      "movieId": 2,
+      "screenId": 11,
+      "startTime": "2025-11-15T17:00:00.000Z",
+      "price": 250
+    },
+    {
+      "id": 235,
+      "movieId": 3,
+      "screenId": 12,
+      "startTime": "2025-11-15T17:00:00.000Z",
+      "price": 400
+    },
+    {
+      "id": 236,
+      "movieId": 1,
+      "screenId": 12,
+      "startTime": "2025-11-15T08:00:00.000Z",
+      "price": 350
+    },
+    {
+      "id": 237,
+      "movieId": 3,
+      "screenId": 12,
+      "startTime": "2025-11-15T04:30:00.000Z",
+      "price": 300
+    },
+    {
+      "id": 238,
+      "movieId": 1,
+      "screenId": 1,
+      "startTime": "2025-11-16T04:30:00.000Z",
+      "price": 350
+    },
+    {
+      "id": 239,
+      "movieId": 6,
+      "screenId": 1,
+      "startTime": "2025-11-16T08:00:00.000Z",
+      "price": 200
+    },
+    {
+      "id": 240,
+      "movieId": 3,
+      "screenId": 1,
+      "startTime": "2025-11-16T11:15:00.000Z",
+      "price": 150
+    },
+    {
+      "id": 241,
+      "movieId": 10,
+      "screenId": 1,
+      "startTime": "2025-11-16T14:45:00.000Z",
+      "price": 250
+    },
+    {
+      "id": 242,
+      "movieId": 6,
+      "screenId": 2,
+      "startTime": "2025-11-16T17:00:00.000Z",
+      "price": 250
+    },
+    {
+      "id": 243,
+      "movieId": 2,
+      "screenId": 2,
+      "startTime": "2025-11-16T14:45:00.000Z",
+      "price": 150
+    },
+    {
+      "id": 244,
+      "movieId": 10,
+      "screenId": 2,
+      "startTime": "2025-11-16T11:15:00.000Z",
+      "price": 200
+    },
+    {
+      "id": 245,
+      "movieId": 10,
+      "screenId": 3,
+      "startTime": "2025-11-16T04:30:00.000Z",
+      "price": 150
+    },
+    {
+      "id": 246,
+      "movieId": 2,
+      "screenId": 3,
+      "startTime": "2025-11-16T17:00:00.000Z",
+      "price": 350
+    },
+    {
+      "id": 247,
+      "movieId": 10,
+      "screenId": 3,
+      "startTime": "2025-11-16T14:45:00.000Z",
+      "price": 200
+    },
+    {
+      "id": 248,
+      "movieId": 2,
+      "screenId": 3,
+      "startTime": "2025-11-16T11:15:00.000Z",
+      "price": 350
+    },
+    {
+      "id": 249,
+      "movieId": 9,
+      "screenId": 4,
+      "startTime": "2025-11-16T04:30:00.000Z",
+      "price": 350
+    },
+    {
+      "id": 250,
+      "movieId": 10,
+      "screenId": 4,
+      "startTime": "2025-11-16T17:00:00.000Z",
+      "price": 250
+    },
+    {
+      "id": 251,
+      "movieId": 8,
+      "screenId": 4,
+      "startTime": "2025-11-16T08:00:00.000Z",
+      "price": 200
+    },
+    {
+      "id": 252,
+      "movieId": 10,
+      "screenId": 4,
+      "startTime": "2025-11-16T14:45:00.000Z",
+      "price": 400
+    },
+    {
+      "id": 253,
+      "movieId": 1,
+      "screenId": 5,
+      "startTime": "2025-11-16T04:30:00.000Z",
+      "price": 150
+    },
+    {
+      "id": 254,
+      "movieId": 9,
+      "screenId": 5,
+      "startTime": "2025-11-16T14:45:00.000Z",
+      "price": 200
+    },
+    {
+      "id": 255,
+      "movieId": 9,
+      "screenId": 5,
+      "startTime": "2025-11-16T17:00:00.000Z",
+      "price": 300
+    },
+    {
+      "id": 256,
+      "movieId": 5,
+      "screenId": 5,
+      "startTime": "2025-11-16T11:15:00.000Z",
+      "price": 300
+    },
+    {
+      "id": 257,
+      "movieId": 3,
+      "screenId": 6,
+      "startTime": "2025-11-16T11:15:00.000Z",
+      "price": 300
+    },
+    {
+      "id": 258,
+      "movieId": 6,
+      "screenId": 6,
+      "startTime": "2025-11-16T17:00:00.000Z",
+      "price": 400
+    },
+    {
+      "id": 259,
+      "movieId": 3,
+      "screenId": 6,
+      "startTime": "2025-11-16T14:45:00.000Z",
+      "price": 400
+    },
+    {
+      "id": 260,
+      "movieId": 9,
+      "screenId": 7,
+      "startTime": "2025-11-16T11:15:00.000Z",
+      "price": 350
+    },
+    {
+      "id": 261,
+      "movieId": 10,
+      "screenId": 7,
+      "startTime": "2025-11-16T04:30:00.000Z",
+      "price": 400
+    },
+    {
+      "id": 262,
+      "movieId": 9,
+      "screenId": 7,
+      "startTime": "2025-11-16T17:00:00.000Z",
+      "price": 300
+    },
+    {
+      "id": 263,
+      "movieId": 2,
+      "screenId": 8,
+      "startTime": "2025-11-16T08:00:00.000Z",
+      "price": 350
+    },
+    {
+      "id": 264,
+      "movieId": 2,
+      "screenId": 8,
+      "startTime": "2025-11-16T11:15:00.000Z",
+      "price": 400
+    },
+    {
+      "id": 265,
+      "movieId": 2,
+      "screenId": 8,
+      "startTime": "2025-11-16T14:45:00.000Z",
+      "price": 300
+    },
+    {
+      "id": 266,
+      "movieId": 2,
+      "screenId": 8,
+      "startTime": "2025-11-16T04:30:00.000Z",
+      "price": 150
+    },
+    {
+      "id": 267,
+      "movieId": 4,
+      "screenId": 9,
+      "startTime": "2025-11-16T14:45:00.000Z",
+      "price": 300
+    },
+    {
+      "id": 268,
+      "movieId": 7,
+      "screenId": 9,
+      "startTime": "2025-11-16T11:15:00.000Z",
+      "price": 350
+    },
+    {
+      "id": 269,
+      "movieId": 10,
+      "screenId": 9,
+      "startTime": "2025-11-16T04:30:00.000Z",
+      "price": 300
+    },
+    {
+      "id": 270,
+      "movieId": 1,
+      "screenId": 10,
+      "startTime": "2025-11-16T17:00:00.000Z",
+      "price": 400
+    },
+    {
+      "id": 271,
+      "movieId": 10,
+      "screenId": 10,
+      "startTime": "2025-11-16T14:45:00.000Z",
+      "price": 300
+    },
+    {
+      "id": 272,
+      "movieId": 7,
+      "screenId": 10,
+      "startTime": "2025-11-16T11:15:00.000Z",
+      "price": 250
+    },
+    {
+      "id": 273,
+      "movieId": 9,
+      "screenId": 10,
+      "startTime": "2025-11-16T04:30:00.000Z",
+      "price": 300
+    },
+    {
+      "id": 274,
+      "movieId": 10,
+      "screenId": 11,
+      "startTime": "2025-11-16T08:00:00.000Z",
+      "price": 250
+    },
+    {
+      "id": 275,
+      "movieId": 3,
+      "screenId": 11,
+      "startTime": "2025-11-16T17:00:00.000Z",
+      "price": 350
+    },
+    {
+      "id": 276,
+      "movieId": 5,
+      "screenId": 11,
+      "startTime": "2025-11-16T14:45:00.000Z",
+      "price": 150
+    },
+    {
+      "id": 277,
+      "movieId": 8,
+      "screenId": 12,
+      "startTime": "2025-11-16T11:15:00.000Z",
+      "price": 250
+    },
+    {
+      "id": 278,
+      "movieId": 8,
+      "screenId": 12,
+      "startTime": "2025-11-16T17:00:00.000Z",
+      "price": 300
+    },
+    {
+      "id": 279,
+      "movieId": 5,
+      "screenId": 12,
+      "startTime": "2025-11-16T08:00:00.000Z",
+      "price": 300
+    },
+    {
+      "id": 280,
+      "movieId": 9,
+      "screenId": 12,
+      "startTime": "2025-11-16T04:30:00.000Z",
+      "price": 250
+    }
+  ],
+  "bookings": [
+    {
+      "id": 1,
+      "userId": 3,
+      "showId": 37,
+      "seats": [
+        {
+          "col": 1,
+          "row": 1
+        }
+      ],
+      "totalPrice": 300,
+      "status": "CANCELLED",
+      "paymentId": 17,
+      "paymentStatus": "COMPLETED",
+      "ticketCode": null,
+      "createdAt": "2025-11-10T10:01:36.380Z",
+      "updatedAt": "2025-11-10T10:21:49.128Z"
+    },
+    {
+      "id": 2,
+      "userId": 3,
+      "showId": 131,
+      "seats": [
+        {
+          "col": 1,
+          "row": 1
+        }
+      ],
+      "totalPrice": 150,
+      "status": "CANCELLED",
+      "paymentId": 20,
+      "paymentStatus": "COMPLETED",
+      "ticketCode": null,
+      "createdAt": "2025-11-10T10:11:25.175Z",
+      "updatedAt": "2025-11-10T10:21:45.973Z"
+    },
+    {
+      "id": 3,
+      "userId": 3,
+      "showId": 40,
+      "seats": [
+        {
+          "col": 1,
+          "row": 1
+        }
+      ],
+      "totalPrice": 400,
+      "status": "CANCELLED",
+      "paymentId": 22,
+      "paymentStatus": "COMPLETED",
+      "ticketCode": null,
+      "createdAt": "2025-11-10T10:30:38.245Z",
+      "updatedAt": "2025-11-10T10:32:40.624Z"
+    },
+    {
+      "id": 4,
+      "userId": 3,
+      "showId": 3,
+      "seats": [
+        {
+          "col": 1,
+          "row": 1
+        }
+      ],
+      "totalPrice": 350,
+      "status": "CONFIRMED",
+      "paymentId": 28,
+      "paymentStatus": "COMPLETED",
+      "ticketCode": "QB-20251110-IB4PF",
+      "createdAt": "2025-11-10T10:34:28.562Z",
+      "updatedAt": "2025-11-10T10:34:28.562Z"
+    },
+    {
+      "id": 5,
+      "userId": 3,
+      "showId": 37,
+      "seats": [
+        {
+          "col": 3,
+          "row": 1
+        }
+      ],
+      "totalPrice": 300,
+      "status": "CONFIRMED",
+      "paymentId": 29,
+      "paymentStatus": "COMPLETED",
+      "ticketCode": "QB-20251110-LWIMP",
+      "createdAt": "2025-11-10T10:35:54.460Z",
+      "updatedAt": "2025-11-10T10:35:54.460Z"
+    },
+    {
+      "id": 6,
+      "userId": 3,
+      "showId": 131,
+      "seats": [
+        {
+          "col": 1,
+          "row": 1
+        }
+      ],
+      "totalPrice": 150,
+      "status": "CONFIRMED",
+      "paymentId": 32,
+      "paymentStatus": "COMPLETED",
+      "ticketCode": "QB-20251110-58OYE",
+      "createdAt": "2025-11-10T10:37:00.598Z",
+      "updatedAt": "2025-11-10T10:37:00.598Z"
+    },
+    {
+      "id": 7,
+      "userId": 3,
+      "showId": 40,
+      "seats": [
+        {
+          "col": 1,
+          "row": 1
+        }
+      ],
+      "totalPrice": 400,
+      "status": "CONFIRMED",
+      "paymentId": 37,
+      "paymentStatus": "COMPLETED",
+      "ticketCode": "QB-20251110-NOCJ6",
+      "createdAt": "2025-11-10T10:41:46.537Z",
+      "updatedAt": "2025-11-10T10:41:46.537Z"
+    },
+    {
+      "id": 8,
+      "userId": 3,
+      "showId": 35,
+      "seats": [
+        {
+          "col": 3,
+          "row": 5
+        }
+      ],
+      "totalPrice": 150,
+      "status": "CONFIRMED",
+      "paymentId": 39,
+      "paymentStatus": "COMPLETED",
+      "ticketCode": "QB-20251110-E5Z5G",
+      "createdAt": "2025-11-10T10:42:37.795Z",
+      "updatedAt": "2025-11-10T10:42:37.795Z"
+    },
+    {
+      "id": 9,
+      "userId": 3,
+      "showId": 169,
+      "seats": [
+        {
+          "col": 4,
+          "row": 1
+        }
+      ],
+      "totalPrice": 350,
+      "status": "CONFIRMED",
+      "paymentId": 41,
+      "paymentStatus": "COMPLETED",
+      "ticketCode": "QB-20251110-3W591",
+      "createdAt": "2025-11-10T10:43:28.563Z",
+      "updatedAt": "2025-11-10T10:43:28.563Z"
+    },
+    {
+      "id": 10,
+      "userId": 3,
+      "showId": 131,
+      "seats": [
+        {
+          "col": 3,
+          "row": 2
+        }
+      ],
+      "totalPrice": 150,
+      "status": "CANCELLED",
+      "paymentId": 44,
+      "paymentStatus": "COMPLETED",
+      "ticketCode": "QB-20251110-RSQSB",
+      "createdAt": "2025-11-10T10:50:05.971Z",
+      "updatedAt": "2025-11-10T11:00:21.110Z"
+    },
+    {
+      "id": 11,
+      "userId": 3,
+      "showId": 8,
+      "seats": [
+        {
+          "col": 2,
+          "row": 1
+        }
+      ],
+      "totalPrice": 200,
+      "status": "CANCELLED",
+      "paymentId": 46,
+      "paymentStatus": "COMPLETED",
+      "ticketCode": "QB-20251110-RXCBF",
+      "createdAt": "2025-11-10T10:55:16.555Z",
+      "updatedAt": "2025-11-10T11:00:18.455Z"
+    },
+    {
+      "id": 12,
+      "userId": 3,
+      "showId": 39,
+      "seats": [
+        {
+          "col": 4,
+          "row": 1
+        }
+      ],
+      "totalPrice": 400,
+      "status": "CANCELLED",
+      "paymentId": 48,
+      "paymentStatus": "COMPLETED",
+      "ticketCode": "QB-20251110-8N69Q",
+      "createdAt": "2025-11-10T10:59:48.041Z",
+      "updatedAt": "2025-11-10T11:00:15.810Z"
+    },
+    {
+      "id": 13,
+      "userId": 3,
+      "showId": 141,
+      "seats": [
+        {
+          "col": 9,
+          "row": 5
+        }
+      ],
+      "totalPrice": 250,
+      "status": "CANCELLED",
+      "paymentId": 50,
+      "paymentStatus": "COMPLETED",
+      "ticketCode": "QB-20251110-D1Q10",
+      "createdAt": "2025-11-10T11:00:58.280Z",
+      "updatedAt": "2025-11-10T11:32:31.387Z"
+    },
+    {
+      "id": 14,
+      "userId": 3,
+      "showId": 39,
+      "seats": [
+        {
+          "col": 3,
+          "row": 5
+        },
+        {
+          "col": 4,
+          "row": 5
+        },
+        {
+          "col": 5,
+          "row": 5
+        }
+      ],
+      "totalPrice": 1200,
+      "status": "CANCELLED",
+      "paymentId": 51,
+      "paymentStatus": "COMPLETED",
+      "ticketCode": "QB-20251110-KMQ7W",
+      "createdAt": "2025-11-10T11:04:18.859Z",
+      "updatedAt": "2025-11-10T11:32:28.570Z"
+    },
+    {
+      "id": 15,
+      "userId": 3,
+      "showId": 15,
+      "seats": [
+        {
+          "col": 4,
+          "row": 2
+        }
+      ],
+      "totalPrice": 250,
+      "status": "CONFIRMED",
+      "paymentId": 53,
+      "paymentStatus": "COMPLETED",
+      "ticketCode": "QB-20251110-L25KL",
+      "createdAt": "2025-11-10T11:12:39.238Z",
+      "updatedAt": "2025-11-10T11:12:39.238Z"
+    },
+    {
+      "id": 16,
+      "userId": 3,
+      "showId": 97,
+      "seats": [
+        {
+          "col": 1,
+          "row": 1
+        }
+      ],
+      "totalPrice": 150,
+      "status": "CANCELLED",
+      "paymentId": 56,
+      "paymentStatus": "COMPLETED",
+      "ticketCode": "QB-20251110-466W6",
+      "createdAt": "2025-11-10T11:23:48.822Z",
+      "updatedAt": "2025-11-10T11:32:25.794Z"
+    }
+  ],
+  "payments": [
+    {
+      "id": 1,
+      "userId": 3,
+      "amount": 1050,
+      "currency": "inr",
+      "paymentMethod": "stripe",
+      "stripePaymentId": null,
+      "stripeClientSecret": null,
+      "status": "PENDING",
+      "metadata": {
+        "seats": [
+          "A1",
+          "A2",
+          "A3"
+        ],
+        "showId": 3,
+        "showTime": "2025-11-10T11:15:00.000Z",
+        "cinemaName": "PVR Cinemas",
+        "movieTitle": "The Dark Knight"
+      },
+      "createdAt": "2025-11-10T09:10:50.846Z",
+      "updatedAt": "2025-11-10T09:10:50.846Z"
+    },
+    {
+      "id": 2,
+      "userId": 3,
+      "amount": 1050,
+      "currency": "inr",
+      "paymentMethod": "stripe",
+      "stripePaymentId": null,
+      "stripeClientSecret": null,
+      "status": "PENDING",
+      "metadata": {
+        "seats": [
+          "A1",
+          "A2",
+          "A3"
+        ],
+        "showId": 3,
+        "showTime": "2025-11-10T11:15:00.000Z",
+        "cinemaName": "PVR Cinemas",
+        "movieTitle": "The Dark Knight"
+      },
+      "createdAt": "2025-11-10T09:10:50.852Z",
+      "updatedAt": "2025-11-10T09:10:50.852Z"
+    },
+    {
+      "id": 3,
+      "userId": 3,
+      "amount": 350,
+      "currency": "inr",
+      "paymentMethod": "stripe",
+      "stripePaymentId": null,
+      "stripeClientSecret": null,
+      "status": "PENDING",
+      "metadata": {
+        "seats": [
+          "A1"
+        ],
+        "showId": 3,
+        "showTime": "2025-11-10T11:15:00.000Z",
+        "cinemaName": "PVR Cinemas",
+        "movieTitle": "The Dark Knight"
+      },
+      "createdAt": "2025-11-10T09:18:01.026Z",
+      "updatedAt": "2025-11-10T09:18:01.026Z"
+    },
+    {
+      "id": 4,
+      "userId": 3,
+      "amount": 350,
+      "currency": "inr",
+      "paymentMethod": "stripe",
+      "stripePaymentId": null,
+      "stripeClientSecret": null,
+      "status": "PENDING",
+      "metadata": {
+        "seats": [
+          "A1"
+        ],
+        "showId": 3,
+        "showTime": "2025-11-10T11:15:00.000Z",
+        "cinemaName": "PVR Cinemas",
+        "movieTitle": "The Dark Knight"
+      },
+      "createdAt": "2025-11-10T09:18:01.048Z",
+      "updatedAt": "2025-11-10T09:18:01.048Z"
+    },
+    {
+      "id": 5,
+      "userId": 3,
+      "amount": 600,
+      "currency": "inr",
+      "paymentMethod": "stripe",
+      "stripePaymentId": null,
+      "stripeClientSecret": null,
+      "status": "PENDING",
+      "metadata": {
+        "seats": [
+          "A1",
+          "A2"
+        ],
+        "showId": 37,
+        "showTime": "2025-11-11T08:00:00.000Z",
+        "cinemaName": "PVR Cinemas",
+        "movieTitle": "The Dark Knight"
+      },
+      "createdAt": "2025-11-10T09:20:57.935Z",
+      "updatedAt": "2025-11-10T09:20:57.935Z"
+    },
+    {
+      "id": 6,
+      "userId": 3,
+      "amount": 600,
+      "currency": "inr",
+      "paymentMethod": "stripe",
+      "stripePaymentId": null,
+      "stripeClientSecret": null,
+      "status": "PENDING",
+      "metadata": {
+        "seats": [
+          "A1",
+          "A2"
+        ],
+        "showId": 37,
+        "showTime": "2025-11-11T08:00:00.000Z",
+        "cinemaName": "PVR Cinemas",
+        "movieTitle": "The Dark Knight"
+      },
+      "createdAt": "2025-11-10T09:20:57.968Z",
+      "updatedAt": "2025-11-10T09:20:57.968Z"
+    },
+    {
+      "id": 7,
+      "userId": 3,
+      "amount": 200,
+      "currency": "inr",
+      "paymentMethod": "stripe",
+      "stripePaymentId": null,
+      "stripeClientSecret": null,
+      "status": "PENDING",
+      "metadata": {
+        "seats": [
+          "A1"
+        ],
+        "showId": 23,
+        "showTime": "2025-11-10T17:00:00.000Z",
+        "cinemaName": "Carnival Cinemas",
+        "movieTitle": "The Dark Knight"
+      },
+      "createdAt": "2025-11-10T09:24:05.828Z",
+      "updatedAt": "2025-11-10T09:24:05.828Z"
+    },
+    {
+      "id": 8,
+      "userId": 3,
+      "amount": 200,
+      "currency": "inr",
+      "paymentMethod": "stripe",
+      "stripePaymentId": null,
+      "stripeClientSecret": null,
+      "status": "PENDING",
+      "metadata": {
+        "seats": [
+          "A1"
+        ],
+        "showId": 23,
+        "showTime": "2025-11-10T17:00:00.000Z",
+        "cinemaName": "Carnival Cinemas",
+        "movieTitle": "The Dark Knight"
+      },
+      "createdAt": "2025-11-10T09:24:05.829Z",
+      "updatedAt": "2025-11-10T09:24:05.829Z"
+    },
+    {
+      "id": 9,
+      "userId": 3,
+      "amount": 600,
+      "currency": "inr",
+      "paymentMethod": "stripe",
+      "stripePaymentId": null,
+      "stripeClientSecret": null,
+      "status": "PENDING",
+      "metadata": {
+        "seats": [
+          "A1",
+          "B2"
+        ],
+        "showId": 37,
+        "showTime": "2025-11-11T08:00:00.000Z",
+        "cinemaName": "PVR Cinemas",
+        "movieTitle": "The Dark Knight"
+      },
+      "createdAt": "2025-11-10T09:26:59.354Z",
+      "updatedAt": "2025-11-10T09:26:59.354Z"
+    },
+    {
+      "id": 10,
+      "userId": 3,
+      "amount": 600,
+      "currency": "inr",
+      "paymentMethod": "stripe",
+      "stripePaymentId": null,
+      "stripeClientSecret": null,
+      "status": "PENDING",
+      "metadata": {
+        "seats": [
+          "A1",
+          "B2"
+        ],
+        "showId": 37,
+        "showTime": "2025-11-11T08:00:00.000Z",
+        "cinemaName": "PVR Cinemas",
+        "movieTitle": "The Dark Knight"
+      },
+      "createdAt": "2025-11-10T09:26:59.356Z",
+      "updatedAt": "2025-11-10T09:26:59.356Z"
+    },
+    {
+      "id": 11,
+      "userId": 3,
+      "amount": 200,
+      "currency": "inr",
+      "paymentMethod": "stripe",
+      "stripePaymentId": null,
+      "stripeClientSecret": null,
+      "status": "PENDING",
+      "metadata": {
+        "seats": [
+          "A3"
+        ],
+        "showId": 161,
+        "showTime": "2025-11-14T08:00:00.000Z",
+        "cinemaName": "PVR Cinemas",
+        "movieTitle": "The Dark Knight"
+      },
+      "createdAt": "2025-11-10T09:30:11.449Z",
+      "updatedAt": "2025-11-10T09:30:11.449Z"
+    },
+    {
+      "id": 12,
+      "userId": 3,
+      "amount": 200,
+      "currency": "inr",
+      "paymentMethod": "stripe",
+      "stripePaymentId": null,
+      "stripeClientSecret": null,
+      "status": "PENDING",
+      "metadata": {
+        "seats": [
+          "A3"
+        ],
+        "showId": 161,
+        "showTime": "2025-11-14T08:00:00.000Z",
+        "cinemaName": "PVR Cinemas",
+        "movieTitle": "The Dark Knight"
+      },
+      "createdAt": "2025-11-10T09:30:11.453Z",
+      "updatedAt": "2025-11-10T09:30:11.453Z"
+    },
+    {
+      "id": 13,
+      "userId": 3,
+      "amount": 300,
+      "currency": "INR",
+      "paymentMethod": "razorpay",
+      "stripePaymentId": null,
+      "stripeClientSecret": null,
+      "status": "PENDING",
+      "metadata": {
+        "seats": [
+          "A2"
+        ],
+        "showId": 37,
+        "showTime": "2025-11-11T08:00:00.000Z",
+        "cinemaName": "PVR Cinemas",
+        "movieTitle": "The Dark Knight"
+      },
+      "createdAt": "2025-11-10T09:46:20.664Z",
+      "updatedAt": "2025-11-10T09:46:20.664Z"
+    },
+    {
+      "id": 14,
+      "userId": 3,
+      "amount": 300,
+      "currency": "INR",
+      "paymentMethod": "razorpay",
+      "stripePaymentId": null,
+      "stripeClientSecret": null,
+      "status": "PENDING",
+      "metadata": {
+        "seats": [
+          "A2"
+        ],
+        "showId": 37,
+        "showTime": "2025-11-11T08:00:00.000Z",
+        "cinemaName": "PVR Cinemas",
+        "movieTitle": "The Dark Knight"
+      },
+      "createdAt": "2025-11-10T09:46:20.662Z",
+      "updatedAt": "2025-11-10T09:46:20.662Z"
+    },
+    {
+      "id": 15,
+      "userId": 3,
+      "amount": 300,
+      "currency": "INR",
+      "paymentMethod": "razorpay",
+      "stripePaymentId": null,
+      "stripeClientSecret": null,
+      "status": "PENDING",
+      "metadata": {
+        "seats": [
+          "A3"
+        ],
+        "showId": 37,
+        "showTime": "2025-11-11T08:00:00.000Z",
+        "cinemaName": "PVR Cinemas",
+        "movieTitle": "The Dark Knight"
+      },
+      "createdAt": "2025-11-10T10:00:18.067Z",
+      "updatedAt": "2025-11-10T10:00:18.067Z"
+    },
+    {
+      "id": 16,
+      "userId": 3,
+      "amount": 300,
+      "currency": "INR",
+      "paymentMethod": "razorpay",
+      "stripePaymentId": null,
+      "stripeClientSecret": null,
+      "status": "PENDING",
+      "metadata": {
+        "seats": [
+          "A3"
+        ],
+        "showId": 37,
+        "showTime": "2025-11-11T08:00:00.000Z",
+        "cinemaName": "PVR Cinemas",
+        "movieTitle": "The Dark Knight"
+      },
+      "createdAt": "2025-11-10T10:00:18.067Z",
+      "updatedAt": "2025-11-10T10:00:18.067Z"
+    },
+    {
+      "id": 17,
+      "userId": 3,
+      "amount": 300,
+      "currency": "INR",
+      "paymentMethod": "razorpay",
+      "stripePaymentId": "order_mock_1762768874393_0nsos7eys",
+      "stripeClientSecret": null,
+      "status": "COMPLETED",
+      "metadata": {
+        "seats": [
+          "A1"
+        ],
+        "showId": 37,
+        "showTime": "2025-11-11T08:00:00.000Z",
+        "cinemaName": "PVR Cinemas",
+        "movieTitle": "The Dark Knight"
+      },
+      "createdAt": "2025-11-10T10:01:13.888Z",
+      "updatedAt": "2025-11-10T10:01:36.391Z"
+    },
+    {
+      "id": 18,
+      "userId": 3,
+      "amount": 300,
+      "currency": "INR",
+      "paymentMethod": "razorpay",
+      "stripePaymentId": "order_mock_1762768874394_qlbx9nflq",
+      "stripeClientSecret": null,
+      "status": "PROCESSING",
+      "metadata": {
+        "seats": [
+          "A1"
+        ],
+        "showId": 37,
+        "showTime": "2025-11-11T08:00:00.000Z",
+        "cinemaName": "PVR Cinemas",
+        "movieTitle": "The Dark Knight"
+      },
+      "createdAt": "2025-11-10T10:01:13.889Z",
+      "updatedAt": "2025-11-10T10:01:14.404Z"
+    },
+    {
+      "id": 19,
+      "userId": 3,
+      "amount": 150,
+      "currency": "INR",
+      "paymentMethod": "mock",
+      "stripePaymentId": "order_mock_1762769474880_svc7glkhz",
+      "stripeClientSecret": null,
+      "status": "PROCESSING",
+      "metadata": {
+        "seats": [
+          "A1"
+        ],
+        "showId": 131,
+        "showTime": "2025-11-13T04:30:00.000Z",
+        "cinemaName": "INOX Megaplex",
+        "movieTitle": "Inception"
+      },
+      "createdAt": "2025-11-10T10:11:14.370Z",
+      "updatedAt": "2025-11-10T10:11:14.888Z"
+    },
+    {
+      "id": 20,
+      "userId": 3,
+      "amount": 150,
+      "currency": "INR",
+      "paymentMethod": "mock",
+      "stripePaymentId": "order_mock_1762769474881_8oqwiqy8u",
+      "stripeClientSecret": null,
+      "status": "COMPLETED",
+      "metadata": {
+        "seats": [
+          "A1"
+        ],
+        "showId": 131,
+        "showTime": "2025-11-13T04:30:00.000Z",
+        "cinemaName": "INOX Megaplex",
+        "movieTitle": "Inception"
+      },
+      "createdAt": "2025-11-10T10:11:14.374Z",
+      "updatedAt": "2025-11-10T10:11:25.181Z"
+    },
+    {
+      "id": 21,
+      "userId": 3,
+      "amount": 400,
+      "currency": "INR",
+      "paymentMethod": "mock",
+      "stripePaymentId": "order_mock_1762770632677_6jaswcqgf",
+      "stripeClientSecret": null,
+      "status": "PROCESSING",
+      "metadata": {
+        "seats": [
+          "A1"
+        ],
+        "showId": 40,
+        "showTime": "2025-11-11T14:45:00.000Z",
+        "cinemaName": "PVR Cinemas",
+        "movieTitle": "Inception"
+      },
+      "createdAt": "2025-11-10T10:30:32.162Z",
+      "updatedAt": "2025-11-10T10:30:32.679Z"
+    },
+    {
+      "id": 22,
+      "userId": 3,
+      "amount": 400,
+      "currency": "INR",
+      "paymentMethod": "mock",
+      "stripePaymentId": "order_mock_1762770632678_3hjm1rle7",
+      "stripeClientSecret": null,
+      "status": "COMPLETED",
+      "metadata": {
+        "seats": [
+          "A1"
+        ],
+        "showId": 40,
+        "showTime": "2025-11-11T14:45:00.000Z",
+        "cinemaName": "PVR Cinemas",
+        "movieTitle": "Inception"
+      },
+      "createdAt": "2025-11-10T10:30:32.162Z",
+      "updatedAt": "2025-11-10T10:30:38.251Z"
+    },
+    {
+      "id": 23,
+      "userId": 3,
+      "amount": 300,
+      "currency": "INR",
+      "paymentMethod": "mock",
+      "stripePaymentId": "order_mock_1762770803650_x69rbjcvd",
+      "stripeClientSecret": null,
+      "status": "PROCESSING",
+      "metadata": {
+        "seats": [
+          "A1"
+        ],
+        "showId": 37,
+        "showTime": "2025-11-11T08:00:00.000Z",
+        "cinemaName": "PVR Cinemas",
+        "movieTitle": "The Dark Knight"
+      },
+      "createdAt": "2025-11-10T10:33:23.144Z",
+      "updatedAt": "2025-11-10T10:33:23.654Z"
+    },
+    {
+      "id": 24,
+      "userId": 3,
+      "amount": 300,
+      "currency": "INR",
+      "paymentMethod": "mock",
+      "stripePaymentId": "order_mock_1762770803649_zooax5jft",
+      "stripeClientSecret": null,
+      "status": "PROCESSING",
+      "metadata": {
+        "seats": [
+          "A1"
+        ],
+        "showId": 37,
+        "showTime": "2025-11-11T08:00:00.000Z",
+        "cinemaName": "PVR Cinemas",
+        "movieTitle": "The Dark Knight"
+      },
+      "createdAt": "2025-11-10T10:33:23.146Z",
+      "updatedAt": "2025-11-10T10:33:23.654Z"
+    },
+    {
+      "id": 25,
+      "userId": 3,
+      "amount": 300,
+      "currency": "INR",
+      "paymentMethod": "mock",
+      "stripePaymentId": "order_mock_1762770844282_kalq0x43r",
+      "stripeClientSecret": null,
+      "status": "PROCESSING",
+      "metadata": {
+        "seats": [
+          "A1"
+        ],
+        "showId": 37,
+        "showTime": "2025-11-11T08:00:00.000Z",
+        "cinemaName": "PVR Cinemas",
+        "movieTitle": "The Dark Knight"
+      },
+      "createdAt": "2025-11-10T10:34:03.779Z",
+      "updatedAt": "2025-11-10T10:34:04.295Z"
+    },
+    {
+      "id": 26,
+      "userId": 3,
+      "amount": 300,
+      "currency": "INR",
+      "paymentMethod": "mock",
+      "stripePaymentId": "order_mock_1762770844282_mqrxhp9ug",
+      "stripeClientSecret": null,
+      "status": "PROCESSING",
+      "metadata": {
+        "seats": [
+          "A1"
+        ],
+        "showId": 37,
+        "showTime": "2025-11-11T08:00:00.000Z",
+        "cinemaName": "PVR Cinemas",
+        "movieTitle": "The Dark Knight"
+      },
+      "createdAt": "2025-11-10T10:34:03.781Z",
+      "updatedAt": "2025-11-10T10:34:04.295Z"
+    },
+    {
+      "id": 27,
+      "userId": 3,
+      "amount": 350,
+      "currency": "INR",
+      "paymentMethod": "mock",
+      "stripePaymentId": "order_mock_1762770865729_tfzq72mcx",
+      "stripeClientSecret": null,
+      "status": "PROCESSING",
+      "metadata": {
+        "seats": [
+          "A1"
+        ],
+        "showId": 3,
+        "showTime": "2025-11-10T11:15:00.000Z",
+        "cinemaName": "PVR Cinemas",
+        "movieTitle": "The Dark Knight"
+      },
+      "createdAt": "2025-11-10T10:34:25.229Z",
+      "updatedAt": "2025-11-10T10:34:25.742Z"
+    },
+    {
+      "id": 28,
+      "userId": 3,
+      "amount": 350,
+      "currency": "INR",
+      "paymentMethod": "mock",
+      "stripePaymentId": "order_mock_1762770865737_jct755wbh",
+      "stripeClientSecret": null,
+      "status": "COMPLETED",
+      "metadata": {
+        "seats": [
+          "A1"
+        ],
+        "showId": 3,
+        "showTime": "2025-11-10T11:15:00.000Z",
+        "cinemaName": "PVR Cinemas",
+        "movieTitle": "The Dark Knight"
+      },
+      "createdAt": "2025-11-10T10:34:25.243Z",
+      "updatedAt": "2025-11-10T10:34:28.567Z"
+    },
+    {
+      "id": 29,
+      "userId": 3,
+      "amount": 300,
+      "currency": "INR",
+      "paymentMethod": "mock",
+      "stripePaymentId": "order_mock_1762770951594_hd1x59ri8",
+      "stripeClientSecret": null,
+      "status": "COMPLETED",
+      "metadata": {
+        "seats": [
+          "A3"
+        ],
+        "showId": 37,
+        "showTime": "2025-11-11T08:00:00.000Z",
+        "cinemaName": "PVR Cinemas",
+        "movieTitle": "The Dark Knight"
+      },
+      "createdAt": "2025-11-10T10:35:51.082Z",
+      "updatedAt": "2025-11-10T10:35:54.464Z"
+    },
+    {
+      "id": 30,
+      "userId": 3,
+      "amount": 300,
+      "currency": "INR",
+      "paymentMethod": "mock",
+      "stripePaymentId": "order_mock_1762770951594_eqeufkim8",
+      "stripeClientSecret": null,
+      "status": "PROCESSING",
+      "metadata": {
+        "seats": [
+          "A3"
+        ],
+        "showId": 37,
+        "showTime": "2025-11-11T08:00:00.000Z",
+        "cinemaName": "PVR Cinemas",
+        "movieTitle": "The Dark Knight"
+      },
+      "createdAt": "2025-11-10T10:35:51.081Z",
+      "updatedAt": "2025-11-10T10:35:51.595Z"
+    },
+    {
+      "id": 31,
+      "userId": 3,
+      "amount": 150,
+      "currency": "INR",
+      "paymentMethod": "mock",
+      "stripePaymentId": "order_mock_1762771017537_we59elox2",
+      "stripeClientSecret": null,
+      "status": "PROCESSING",
+      "metadata": {
+        "seats": [
+          "A1"
+        ],
+        "showId": 131,
+        "showTime": "2025-11-13T04:30:00.000Z",
+        "cinemaName": "INOX Megaplex",
+        "movieTitle": "Inception"
+      },
+      "createdAt": "2025-11-10T10:36:57.016Z",
+      "updatedAt": "2025-11-10T10:36:57.538Z"
+    },
+    {
+      "id": 32,
+      "userId": 3,
+      "amount": 150,
+      "currency": "INR",
+      "paymentMethod": "mock",
+      "stripePaymentId": "order_mock_1762771017537_7va651r4u",
+      "stripeClientSecret": null,
+      "status": "COMPLETED",
+      "metadata": {
+        "seats": [
+          "A1"
+        ],
+        "showId": 131,
+        "showTime": "2025-11-13T04:30:00.000Z",
+        "cinemaName": "INOX Megaplex",
+        "movieTitle": "Inception"
+      },
+      "createdAt": "2025-11-10T10:36:57.018Z",
+      "updatedAt": "2025-11-10T10:37:00.603Z"
+    },
+    {
+      "id": 33,
+      "userId": 3,
+      "amount": 200,
+      "currency": "INR",
+      "paymentMethod": "mock",
+      "stripePaymentId": "order_mock_1762771089352_yqfrdobf6",
+      "stripeClientSecret": null,
+      "status": "PROCESSING",
+      "metadata": {
+        "seats": [
+          "A5"
+        ],
+        "showId": 16,
+        "showTime": "2025-11-10T14:45:00.000Z",
+        "cinemaName": "INOX Megaplex",
+        "movieTitle": "Parasite"
+      },
+      "createdAt": "2025-11-10T10:38:08.839Z",
+      "updatedAt": "2025-11-10T10:38:09.354Z"
+    },
+    {
+      "id": 34,
+      "userId": 3,
+      "amount": 200,
+      "currency": "INR",
+      "paymentMethod": "mock",
+      "stripePaymentId": "order_mock_1762771089353_xsr0sa378",
+      "stripeClientSecret": null,
+      "status": "PROCESSING",
+      "metadata": {
+        "seats": [
+          "A5"
+        ],
+        "showId": 16,
+        "showTime": "2025-11-10T14:45:00.000Z",
+        "cinemaName": "INOX Megaplex",
+        "movieTitle": "Parasite"
+      },
+      "createdAt": "2025-11-10T10:38:08.841Z",
+      "updatedAt": "2025-11-10T10:38:09.354Z"
+    },
+    {
+      "id": 35,
+      "userId": 3,
+      "amount": 400,
+      "currency": "INR",
+      "paymentMethod": "mock",
+      "stripePaymentId": "order_mock_1762771265820_z88s10she",
+      "stripeClientSecret": null,
+      "status": "PROCESSING",
+      "metadata": {
+        "seats": [
+          "A1"
+        ],
+        "showId": 40,
+        "showTime": "2025-11-11T14:45:00.000Z",
+        "cinemaName": "PVR Cinemas",
+        "movieTitle": "Inception"
+      },
+      "createdAt": "2025-11-10T10:41:05.311Z",
+      "updatedAt": "2025-11-10T10:41:05.821Z"
+    },
+    {
+      "id": 36,
+      "userId": 3,
+      "amount": 400,
+      "currency": "INR",
+      "paymentMethod": "mock",
+      "stripePaymentId": "order_mock_1762771265820_cwbq02kiv",
+      "stripeClientSecret": null,
+      "status": "PROCESSING",
+      "metadata": {
+        "seats": [
+          "A1"
+        ],
+        "showId": 40,
+        "showTime": "2025-11-11T14:45:00.000Z",
+        "cinemaName": "PVR Cinemas",
+        "movieTitle": "Inception"
+      },
+      "createdAt": "2025-11-10T10:41:05.313Z",
+      "updatedAt": "2025-11-10T10:41:05.821Z"
+    },
+    {
+      "id": 37,
+      "userId": 3,
+      "amount": 400,
+      "currency": "INR",
+      "paymentMethod": "mock",
+      "stripePaymentId": "order_mock_1762771299935_qt8758vn2",
+      "stripeClientSecret": null,
+      "status": "COMPLETED",
+      "metadata": {
+        "seats": [
+          "A1"
+        ],
+        "showId": 40,
+        "showTime": "2025-11-11T14:45:00.000Z",
+        "cinemaName": "PVR Cinemas",
+        "movieTitle": "Inception"
+      },
+      "createdAt": "2025-11-10T10:41:39.427Z",
+      "updatedAt": "2025-11-10T10:41:46.541Z"
+    },
+    {
+      "id": 38,
+      "userId": 3,
+      "amount": 400,
+      "currency": "INR",
+      "paymentMethod": "mock",
+      "stripePaymentId": "order_mock_1762771299935_gnhznd11z",
+      "stripeClientSecret": null,
+      "status": "PROCESSING",
+      "metadata": {
+        "seats": [
+          "A1"
+        ],
+        "showId": 40,
+        "showTime": "2025-11-11T14:45:00.000Z",
+        "cinemaName": "PVR Cinemas",
+        "movieTitle": "Inception"
+      },
+      "createdAt": "2025-11-10T10:41:39.432Z",
+      "updatedAt": "2025-11-10T10:41:39.940Z"
+    },
+    {
+      "id": 39,
+      "userId": 3,
+      "amount": 150,
+      "currency": "INR",
+      "paymentMethod": "mock",
+      "stripePaymentId": "order_mock_1762771354272_zfuqdm93b",
+      "stripeClientSecret": null,
+      "status": "COMPLETED",
+      "metadata": {
+        "seats": [
+          "E3"
+        ],
+        "showId": 35,
+        "showTime": "2025-11-11T17:00:00.000Z",
+        "cinemaName": "PVR Cinemas",
+        "movieTitle": "The Dark Knight"
+      },
+      "createdAt": "2025-11-10T10:42:33.751Z",
+      "updatedAt": "2025-11-10T10:42:37.799Z"
+    },
+    {
+      "id": 40,
+      "userId": 3,
+      "amount": 150,
+      "currency": "INR",
+      "paymentMethod": "mock",
+      "stripePaymentId": "order_mock_1762771354272_jlok38q6k",
+      "stripeClientSecret": null,
+      "status": "PROCESSING",
+      "metadata": {
+        "seats": [
+          "E3"
+        ],
+        "showId": 35,
+        "showTime": "2025-11-11T17:00:00.000Z",
+        "cinemaName": "PVR Cinemas",
+        "movieTitle": "The Dark Knight"
+      },
+      "createdAt": "2025-11-10T10:42:33.754Z",
+      "updatedAt": "2025-11-10T10:42:34.273Z"
+    },
+    {
+      "id": 41,
+      "userId": 3,
+      "amount": 350,
+      "currency": "INR",
+      "paymentMethod": "mock",
+      "stripePaymentId": "order_mock_1762771373984_yw6zmswi5",
+      "stripeClientSecret": null,
+      "status": "COMPLETED",
+      "metadata": {
+        "seats": [
+          "A4"
+        ],
+        "showId": 169,
+        "showTime": "2025-11-14T17:00:00.000Z",
+        "cinemaName": "INOX Megaplex",
+        "movieTitle": "Parasite"
+      },
+      "createdAt": "2025-11-10T10:42:53.471Z",
+      "updatedAt": "2025-11-10T10:43:28.568Z"
+    },
+    {
+      "id": 42,
+      "userId": 3,
+      "amount": 350,
+      "currency": "INR",
+      "paymentMethod": "mock",
+      "stripePaymentId": "order_mock_1762771373985_8r32anhlc",
+      "stripeClientSecret": null,
+      "status": "PROCESSING",
+      "metadata": {
+        "seats": [
+          "A4"
+        ],
+        "showId": 169,
+        "showTime": "2025-11-14T17:00:00.000Z",
+        "cinemaName": "INOX Megaplex",
+        "movieTitle": "Parasite"
+      },
+      "createdAt": "2025-11-10T10:42:53.475Z",
+      "updatedAt": "2025-11-10T10:42:53.986Z"
+    },
+    {
+      "id": 43,
+      "userId": 3,
+      "amount": 150,
+      "currency": "INR",
+      "paymentMethod": "mock",
+      "stripePaymentId": "order_mock_1762771801646_gk1r4gnn1",
+      "stripeClientSecret": null,
+      "status": "PROCESSING",
+      "metadata": {
+        "seats": [
+          "B3"
+        ],
+        "showId": 131,
+        "showTime": "2025-11-13T04:30:00.000Z",
+        "cinemaName": "INOX Megaplex",
+        "movieTitle": "Inception"
+      },
+      "createdAt": "2025-11-10T10:50:01.134Z",
+      "updatedAt": "2025-11-10T10:50:01.647Z"
+    },
+    {
+      "id": 44,
+      "userId": 3,
+      "amount": 150,
+      "currency": "INR",
+      "paymentMethod": "mock",
+      "stripePaymentId": "order_mock_1762771801652_sfmwltxjb",
+      "stripeClientSecret": null,
+      "status": "COMPLETED",
+      "metadata": {
+        "seats": [
+          "B3"
+        ],
+        "showId": 131,
+        "showTime": "2025-11-13T04:30:00.000Z",
+        "cinemaName": "INOX Megaplex",
+        "movieTitle": "Inception"
+      },
+      "createdAt": "2025-11-10T10:50:01.146Z",
+      "updatedAt": "2025-11-10T10:50:05.976Z"
+    },
+    {
+      "id": 45,
+      "userId": 3,
+      "amount": 200,
+      "currency": "INR",
+      "paymentMethod": "mock",
+      "stripePaymentId": "order_mock_1762772112367_azxh57gzh",
+      "stripeClientSecret": null,
+      "status": "PROCESSING",
+      "metadata": {
+        "seats": [
+          "A2"
+        ],
+        "showId": 8,
+        "showTime": "2025-11-10T17:00:00.000Z",
+        "cinemaName": "PVR Cinemas",
+        "movieTitle": "Parasite"
+      },
+      "createdAt": "2025-11-10T10:55:11.858Z",
+      "updatedAt": "2025-11-10T10:55:12.369Z"
+    },
+    {
+      "id": 46,
+      "userId": 3,
+      "amount": 200,
+      "currency": "INR",
+      "paymentMethod": "mock",
+      "stripePaymentId": "order_mock_1762772112368_y71be6n89",
+      "stripeClientSecret": null,
+      "status": "COMPLETED",
+      "metadata": {
+        "seats": [
+          "A2"
+        ],
+        "showId": 8,
+        "showTime": "2025-11-10T17:00:00.000Z",
+        "cinemaName": "PVR Cinemas",
+        "movieTitle": "Parasite"
+      },
+      "createdAt": "2025-11-10T10:55:11.859Z",
+      "updatedAt": "2025-11-10T10:55:16.559Z"
+    },
+    {
+      "id": 47,
+      "userId": 3,
+      "amount": 400,
+      "currency": "INR",
+      "paymentMethod": "mock",
+      "stripePaymentId": "order_mock_1762772383004_8nbgzzite",
+      "stripeClientSecret": null,
+      "status": "PROCESSING",
+      "metadata": {
+        "seats": [
+          "A4"
+        ],
+        "showId": 39,
+        "showTime": "2025-11-11T17:00:00.000Z",
+        "cinemaName": "PVR Cinemas",
+        "movieTitle": "The Dark Knight"
+      },
+      "createdAt": "2025-11-10T10:59:42.490Z",
+      "updatedAt": "2025-11-10T10:59:43.007Z"
+    },
+    {
+      "id": 48,
+      "userId": 3,
+      "amount": 400,
+      "currency": "INR",
+      "paymentMethod": "mock",
+      "stripePaymentId": "order_mock_1762772383004_hkgaxjvtq",
+      "stripeClientSecret": null,
+      "status": "COMPLETED",
+      "metadata": {
+        "seats": [
+          "A4"
+        ],
+        "showId": 39,
+        "showTime": "2025-11-11T17:00:00.000Z",
+        "cinemaName": "PVR Cinemas",
+        "movieTitle": "The Dark Knight"
+      },
+      "createdAt": "2025-11-10T10:59:42.490Z",
+      "updatedAt": "2025-11-10T10:59:48.045Z"
+    },
+    {
+      "id": 49,
+      "userId": 3,
+      "amount": 250,
+      "currency": "INR",
+      "paymentMethod": "mock",
+      "stripePaymentId": "order_mock_1762772453408_79co44rte",
+      "stripeClientSecret": null,
+      "status": "PROCESSING",
+      "metadata": {
+        "seats": [
+          "E9"
+        ],
+        "showId": 141,
+        "showTime": "2025-11-13T11:15:00.000Z",
+        "cinemaName": "Cinepolis",
+        "movieTitle": "Joker"
+      },
+      "createdAt": "2025-11-10T11:00:52.888Z",
+      "updatedAt": "2025-11-10T11:00:53.409Z"
+    },
+    {
+      "id": 50,
+      "userId": 3,
+      "amount": 250,
+      "currency": "INR",
+      "paymentMethod": "mock",
+      "stripePaymentId": "order_mock_1762772453408_gu2lt37sn",
+      "stripeClientSecret": null,
+      "status": "COMPLETED",
+      "metadata": {
+        "seats": [
+          "E9"
+        ],
+        "showId": 141,
+        "showTime": "2025-11-13T11:15:00.000Z",
+        "cinemaName": "Cinepolis",
+        "movieTitle": "Joker"
+      },
+      "createdAt": "2025-11-10T11:00:52.891Z",
+      "updatedAt": "2025-11-10T11:00:58.285Z"
+    },
+    {
+      "id": 51,
+      "userId": 3,
+      "amount": 1200,
+      "currency": "INR",
+      "paymentMethod": "mock",
+      "stripePaymentId": "order_mock_1762772653514_l397avp8a",
+      "stripeClientSecret": null,
+      "status": "COMPLETED",
+      "metadata": {
+        "seats": [
+          "E3",
+          "E4",
+          "E5"
+        ],
+        "showId": 39,
+        "showTime": "2025-11-11T17:00:00.000Z",
+        "cinemaName": "PVR Cinemas",
+        "movieTitle": "The Dark Knight"
+      },
+      "createdAt": "2025-11-10T11:04:13.011Z",
+      "updatedAt": "2025-11-10T11:04:18.864Z"
+    },
+    {
+      "id": 52,
+      "userId": 3,
+      "amount": 1200,
+      "currency": "INR",
+      "paymentMethod": "mock",
+      "stripePaymentId": "order_mock_1762772653515_6rd2jio89",
+      "stripeClientSecret": null,
+      "status": "PROCESSING",
+      "metadata": {
+        "seats": [
+          "E3",
+          "E4",
+          "E5"
+        ],
+        "showId": 39,
+        "showTime": "2025-11-11T17:00:00.000Z",
+        "cinemaName": "PVR Cinemas",
+        "movieTitle": "The Dark Knight"
+      },
+      "createdAt": "2025-11-10T11:04:13.011Z",
+      "updatedAt": "2025-11-10T11:04:13.521Z"
+    },
+    {
+      "id": 53,
+      "userId": 3,
+      "amount": 250,
+      "currency": "INR",
+      "paymentMethod": "mock",
+      "stripePaymentId": "order_mock_1762773150930_bl3bh1k54",
+      "stripeClientSecret": null,
+      "status": "COMPLETED",
+      "metadata": {
+        "seats": [
+          "B4"
+        ],
+        "showId": 15,
+        "showTime": "2025-11-10T11:15:00.000Z",
+        "cinemaName": "INOX Megaplex",
+        "movieTitle": "Inception"
+      },
+      "createdAt": "2025-11-10T11:12:30.419Z",
+      "updatedAt": "2025-11-10T11:12:39.244Z"
+    },
+    {
+      "id": 54,
+      "userId": 3,
+      "amount": 250,
+      "currency": "INR",
+      "paymentMethod": "mock",
+      "stripePaymentId": "order_mock_1762773150931_2eglipxtm",
+      "stripeClientSecret": null,
+      "status": "PROCESSING",
+      "metadata": {
+        "seats": [
+          "B4"
+        ],
+        "showId": 15,
+        "showTime": "2025-11-10T11:15:00.000Z",
+        "cinemaName": "INOX Megaplex",
+        "movieTitle": "Inception"
+      },
+      "createdAt": "2025-11-10T11:12:30.418Z",
+      "updatedAt": "2025-11-10T11:12:30.932Z"
+    },
+    {
+      "id": 55,
+      "userId": 3,
+      "amount": 150,
+      "currency": "INR",
+      "paymentMethod": "mock",
+      "stripePaymentId": "order_mock_1762773824530_8oruoqxtp",
+      "stripeClientSecret": null,
+      "status": "PROCESSING",
+      "metadata": {
+        "seats": [
+          "A1"
+        ],
+        "showId": 97,
+        "showTime": "2025-11-12T08:00:00.000Z",
+        "cinemaName": "Cinepolis",
+        "movieTitle": "The Dark Knight"
+      },
+      "createdAt": "2025-11-10T11:23:44.022Z",
+      "updatedAt": "2025-11-10T11:23:44.532Z"
+    },
+    {
+      "id": 56,
+      "userId": 3,
+      "amount": 150,
+      "currency": "INR",
+      "paymentMethod": "mock",
+      "stripePaymentId": "order_mock_1762773824538_2eoevs3sr",
+      "stripeClientSecret": null,
+      "status": "COMPLETED",
+      "metadata": {
+        "seats": [
+          "A1"
+        ],
+        "showId": 97,
+        "showTime": "2025-11-12T08:00:00.000Z",
+        "cinemaName": "Cinepolis",
+        "movieTitle": "The Dark Knight"
+      },
+      "createdAt": "2025-11-10T11:23:44.025Z",
+      "updatedAt": "2025-11-10T11:23:48.827Z"
+    }
+  ],
+  "seatHolds": []
+}

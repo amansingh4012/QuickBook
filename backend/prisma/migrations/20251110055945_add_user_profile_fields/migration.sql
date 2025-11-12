@@ -1,6 +1,0 @@
--- AlterTable
-ALTER TABLE `user` ADD COLUMN `address` VARCHAR(500) NULL,
-    ADD COLUMN `city` VARCHAR(100) NULL,
-    ADD COLUMN `dateOfBirth` DATETIME(3) NULL,
-    ADD COLUMN `pincode` VARCHAR(10) NULL,
-    ADD COLUMN `state` VARCHAR(100) NULL;

@@ -167,7 +167,12 @@ const confirmPayment = async (req, res, next) => {
     }
 
     // Create booking with payment
-    const { showId, seats } = payment.metadata;
+    // Parse metadata if it's a string (PostgreSQL might return it differently)
+    const metadata = typeof payment.metadata === 'string' 
+      ? JSON.parse(payment.metadata) 
+      : payment.metadata;
+    
+    const { showId, seats } = metadata;
 
     // Use transaction to create booking and update payment
     const result = await prisma.$transaction(async (tx) => {

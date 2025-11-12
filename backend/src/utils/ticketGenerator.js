@@ -1,5 +1,6 @@
-const PDFDocument = require('pdfkit');
-const QRCode = require('qrcode');
+// Simplified ticket generator without PDF support
+// const PDFDocument = require('pdfkit');
+// const QRCode = require('qrcode');
 const { dbSeatsToLabels } = require('./seats');
 
 /**
@@ -14,37 +15,15 @@ const generateTicketCode = () => {
 };
 
 /**
- * Generate QR code as data URL
+ * Generate QR code as data URL (DISABLED - requires qrcode package)
  * @param {string} ticketCode - The unique ticket code
  * @param {object} bookingData - Booking information
  * @returns {Promise<Buffer>} QR code image buffer
  */
 const generateQRCode = async (ticketCode, bookingData) => {
-  const qrData = JSON.stringify({
-    ticketCode,
-    bookingId: bookingData.id,
-    showId: bookingData.showId,
-    userId: bookingData.userId,
-    seats: bookingData.seats,
-    timestamp: new Date().toISOString()
-  });
-
-  try {
-    const qrBuffer = await QRCode.toBuffer(qrData, {
-      errorCorrectionLevel: 'H',
-      type: 'png',
-      width: 200,
-      margin: 1,
-      color: {
-        dark: '#000000',
-        light: '#FFFFFF'
-      }
-    });
-    return qrBuffer;
-  } catch (error) {
-    console.error('Error generating QR code:', error);
-    throw new Error('Failed to generate QR code');
-  }
+  // Disabled - QR code generation requires 'qrcode' package
+  console.log('QR code generation disabled - install qrcode package to enable');
+  return null;
 };
 
 /**
@@ -71,35 +50,18 @@ const formatTime = (date) => {
 };
 
 /**
- * Generate E-Ticket PDF
+ * Generate E-Ticket PDF (DISABLED - requires pdfkit and qrcode packages)
  * @param {object} booking - Complete booking object with relations
  * @returns {Promise<Buffer>} PDF buffer
  */
 const generateTicketPDF = async (booking) => {
-  console.log('🎫 Starting PDF generation for booking:', booking.id);
+  console.log('⚠️ PDF generation disabled - pdfkit and qrcode packages not installed');
+  console.log('📝 Booking:', booking.id, 'Ticket Code:', booking.ticketCode);
   
-  // Extract data
-  const seatLabels = dbSeatsToLabels(booking.seats);
-  const movieTitle = booking.show.movie.title;
-  const cinemaName = booking.show.screen.cinema.name;
-  const screenName = booking.show.screen.name;
-  const showDate = formatDate(booking.show.startTime);
-  const showTime = formatTime(booking.show.startTime);
-  const ticketCode = booking.ticketCode;
-
-  console.log('📝 Ticket data:', { movieTitle, cinemaName, ticketCode, seats: seatLabels.length });
-
-  // Generate QR code first
-  const qrCodeBuffer = await generateQRCode(ticketCode, {
-    id: booking.id,
-    showId: booking.showId,
-    userId: booking.userId,
-    seats: seatLabels
-  });
-
-  console.log('✅ QR code generated, buffer size:', qrCodeBuffer.length);
-
-  // Return a promise that resolves with the complete PDF buffer
+  // Return null - PDF generation disabled
+  throw new Error('E-Ticket PDF generation is currently disabled. Install pdfkit and qrcode packages to enable this feature.');
+  
+  /* Original code preserved for future implementation:
   return new Promise((resolve, reject) => {
     try {
       // Create PDF document with proper configuration
@@ -353,6 +315,7 @@ const generateTicketPDF = async (booking) => {
       reject(error);
     }
   });
+  */
 };
 
 /**
