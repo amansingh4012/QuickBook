@@ -96,7 +96,7 @@ if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '../../frontend/dist')));
   
   // All other GET requests not handled before will return our React app
-  app.get('*', (req, res) => {
+  app.get(/^\/(?!api).*/, (req, res) => {
     res.sendFile(path.join(__dirname, '../../frontend/dist', 'index.html'));
   });
 }
